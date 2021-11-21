@@ -1,0 +1,375 @@
+CRITICAL - 2021-11-17 00:25:06 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\Codeinteger\app\Views\patient\all.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 28, Array)
+#1 C:\xampp\htdocs\Codeinteger\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Codeinteger\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Codeinteger\system\Common.php(1097): CodeIgniter\View\View->render('patient/all', Array, true)
+#4 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(29): view('patient/all')
+#5 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->index()
+#6 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#7 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-11-17 00:26:05 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\Codeinteger\app\Views\patient\all.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 28, Array)
+#1 C:\xampp\htdocs\Codeinteger\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Codeinteger\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Codeinteger\system\Common.php(1097): CodeIgniter\View\View->render('patient/all', Array, true)
+#4 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(29): view('patient/all')
+#5 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->index()
+#6 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#7 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-11-17 00:26:08 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\Codeinteger\app\Views\patient\all.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 28, Array)
+#1 C:\xampp\htdocs\Codeinteger\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Codeinteger\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Codeinteger\system\Common.php(1097): CodeIgniter\View\View->render('patient/all', Array, true)
+#4 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(29): view('patient/all')
+#5 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->index()
+#6 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#7 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-11-17 00:32:12 --> login filter must have a matching alias defined.
+#0 C:\xampp\htdocs\Codeinteger\system\Filters\Filters.php(496): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('login')
+#1 C:\xampp\htdocs\Codeinteger\system\Filters\Filters.php(243): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+#2 C:\xampp\htdocs\Codeinteger\system\Filters\Filters.php(163): CodeIgniter\Filters\Filters->initialize('login')
+#3 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('login', 'before')
+#4 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-11-17 00:32:13 --> login filter must have a matching alias defined.
+#0 C:\xampp\htdocs\Codeinteger\system\Filters\Filters.php(496): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('login')
+#1 C:\xampp\htdocs\Codeinteger\system\Filters\Filters.php(243): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+#2 C:\xampp\htdocs\Codeinteger\system\Filters\Filters.php(163): CodeIgniter\Filters\Filters->initialize('login')
+#3 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('login', 'before')
+#4 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-11-17 00:34:58 --> Function name must be a string
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('all')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-17 00:35:05 --> Function name must be a string
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('all')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-17 00:35:22 --> Function name must be a string
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('all')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-17 00:51:58 --> Argument 1 passed to CodeIgniter\Router\RouteCollection::match() must be of the type array, string given, called in C:\xampp\htdocs\Codeinteger\app\Config\Routes.php on line 40
+#0 C:\xampp\htdocs\Codeinteger\app\Config\Routes.php(40): CodeIgniter\Router\RouteCollection->match('/patient', 'Patient::index', Array)
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(705): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-11-17 00:54:20 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\Codeinteger\app\Views\patient\all.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 28, Array)
+#1 C:\xampp\htdocs\Codeinteger\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Codeinteger\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Codeinteger\system\Common.php(1097): CodeIgniter\View\View->render('patient/all', Array, true)
+#4 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(30): view('patient/all')
+#5 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->index()
+#6 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#7 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-11-17 00:54:45 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\Codeinteger\app\Views\patient\all.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 28, Array)
+#1 C:\xampp\htdocs\Codeinteger\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Codeinteger\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Codeinteger\system\Common.php(1097): CodeIgniter\View\View->render('patient/all', Array, true)
+#4 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(30): view('patient/all')
+#5 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->index()
+#6 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#7 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-11-17 02:56:50 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('plugins', 'bootstrap-datep...', 'js', 'locales', 'bootstrap-datep...')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-17 02:58:20 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\Codeinteger\app\Views\patient\all.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 28, Array)
+#1 C:\xampp\htdocs\Codeinteger\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Codeinteger\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Codeinteger\system\Common.php(1097): CodeIgniter\View\View->render('patient/all', Array, true)
+#4 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(30): view('patient/all')
+#5 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->index()
+#6 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#7 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-11-17 02:59:04 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\Codeinteger\app\Views\patient\all.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 28, Array)
+#1 C:\xampp\htdocs\Codeinteger\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Codeinteger\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Codeinteger\system\Common.php(1097): CodeIgniter\View\View->render('patient/all', Array, true)
+#4 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(30): view('patient/all')
+#5 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->index()
+#6 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#7 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-11-17 03:02:00 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\Codeinteger\app\Views\patient\all.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 28, Array)
+#1 C:\xampp\htdocs\Codeinteger\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Codeinteger\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Codeinteger\system\Common.php(1097): CodeIgniter\View\View->render('patient/all', Array, true)
+#4 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(30): view('patient/all')
+#5 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->index()
+#6 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#7 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-11-17 03:02:07 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\Codeinteger\app\Views\patient\all.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 28, Array)
+#1 C:\xampp\htdocs\Codeinteger\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Codeinteger\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Codeinteger\system\Common.php(1097): CodeIgniter\View\View->render('patient/all', Array, true)
+#4 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(30): view('patient/all')
+#5 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->index()
+#6 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#7 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-11-17 03:02:14 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\Codeinteger\app\Views\patient\all.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 28, Array)
+#1 C:\xampp\htdocs\Codeinteger\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Codeinteger\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Codeinteger\system\Common.php(1097): CodeIgniter\View\View->render('patient/all', Array, true)
+#4 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(30): view('patient/all')
+#5 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->index()
+#6 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#7 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-11-17 03:25:54 --> Call to undefined function App\Filters\logged_in()
+#0 C:\xampp\htdocs\Codeinteger\system\Filters\Filters.php(173): App\Filters\Auth->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('login', 'before')
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-17 03:37:32 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\Codeinteger\app\Views\patient\all.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 28, Array)
+#1 C:\xampp\htdocs\Codeinteger\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Codeinteger\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Codeinteger\system\Common.php(1097): CodeIgniter\View\View->render('patient/all', Array, true)
+#4 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(30): view('patient/all')
+#5 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->index()
+#6 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#7 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-11-17 04:52:53 --> Call to undefined function TL()
+#0 C:\xampp\htdocs\Codeinteger\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\Codeinteger\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\Codeinteger\system\Common.php(1097): CodeIgniter\View\View->render('patient/profile', Array, true)
+#3 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(75): view('patient/profile', Array)
+#4 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->profile()
+#5 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#6 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2021-11-17 21:26:24 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '> $id]' at line 3
+CRITICAL - 2021-11-17 21:26:24 --> Call to a member function getResultArray() on bool
+#0 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(78): App\Models\DataModel->selectAll(Array)
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->profile()
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#3 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2021-11-17 21:26:32 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '> $id]' at line 3
+CRITICAL - 2021-11-17 21:26:32 --> Call to a member function getResultArray() on bool
+#0 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(78): App\Models\DataModel->selectAll(Array)
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->profile()
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#3 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2021-11-17 21:26:45 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '> $id]' at line 3
+CRITICAL - 2021-11-17 21:26:45 --> Call to a member function getResultArray() on bool
+#0 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(77): App\Models\DataModel->selectAll(Array)
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->profile()
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#3 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2021-11-17 21:27:07 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '> 1]' at line 3
+CRITICAL - 2021-11-17 21:27:07 --> Call to a member function getResultArray() on bool
+#0 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(77): App\Models\DataModel->selectAll(Array)
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->profile()
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#3 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2021-11-17 21:27:24 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '> 1]' at line 3
+CRITICAL - 2021-11-17 21:27:24 --> Call to a member function getResultArray() on bool
+#0 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(77): App\Models\DataModel->selectAll(Array)
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->profile()
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#3 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2021-11-17 21:27:31 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '> 1]' at line 3
+CRITICAL - 2021-11-17 21:27:31 --> Call to a member function getResultArray() on bool
+#0 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(77): App\Models\DataModel->selectAll(Array)
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->profile()
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#3 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2021-11-17 21:27:36 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '> 1]' at line 3
+CRITICAL - 2021-11-17 21:27:36 --> Call to a member function getResultArray() on bool
+#0 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(77): App\Models\DataModel->selectAll(Array)
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->profile()
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#3 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2021-11-17 21:28:07 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '[id_hn, $name]' at line 3
+CRITICAL - 2021-11-17 21:28:07 --> Call to a member function getResultArray() on bool
+#0 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(77): App\Models\DataModel->selectAll(Array)
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->profile()
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#3 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2021-11-17 21:28:41 --> Operand should contain 1 column(s)
+CRITICAL - 2021-11-17 21:28:41 --> Call to a member function getResultArray() on bool
+#0 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(77): App\Models\DataModel->selectAll(Array)
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->profile()
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#3 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2021-11-17 21:28:50 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '"1" IS NULL' at line 3
+CRITICAL - 2021-11-17 21:28:50 --> Call to a member function getResultArray() on bool
+#0 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(77): App\Models\DataModel->selectAll(Array)
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->profile()
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#3 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2021-11-17 21:28:56 --> Unknown column 'id_hn,1' in 'where clause'
+CRITICAL - 2021-11-17 21:28:56 --> Call to a member function getResultArray() on bool
+#0 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(77): App\Models\DataModel->selectAll(Array)
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->profile()
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#3 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2021-11-17 21:28:57 --> Unknown column 'id_hn,1' in 'where clause'
+CRITICAL - 2021-11-17 21:28:57 --> Call to a member function getResultArray() on bool
+#0 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(77): App\Models\DataModel->selectAll(Array)
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->profile()
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#3 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2021-11-17 21:36:10 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1 IS NULL' at line 3
+CRITICAL - 2021-11-17 21:36:10 --> Call to a member function getResultArray() on bool
+#0 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(77): App\Models\DataModel->selectAll(Array)
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->profile()
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#3 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2021-11-17 21:37:50 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' IS NULL' at line 3
+CRITICAL - 2021-11-17 21:37:50 --> Call to a member function getResultArray() on bool
+#0 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(77): App\Models\DataModel->selectAll(Array)
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->profile()
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#3 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-11-17 21:39:11 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::where_in()
+#0 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(77): App\Models\DataModel->selectAll(Array)
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->profile()
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#3 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-11-17 21:39:24 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::where_in()
+#0 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(77): App\Models\DataModel->selectAll(Array)
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->profile()
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#3 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2021-11-17 21:40:50 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1 IS NULL' at line 3
+CRITICAL - 2021-11-17 21:40:50 --> Call to a member function getResultArray() on bool
+#0 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(77): App\Models\DataModel->selectAll(Array)
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->profile()
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#3 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-11-17 21:43:21 --> syntax error, unexpected ','
+#0 C:\xampp\htdocs\Codeinteger\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\Codeinteger\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2021-11-17 21:48:20 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1"}' at line 3
+CRITICAL - 2021-11-17 21:48:20 --> Call to a member function getResultArray() on bool
+#0 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(77): App\Models\DataModel->selectAll(Array)
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->profile()
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#3 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}

@@ -1,0 +1,114 @@
+CRITICAL - 2021-11-18 21:54:04 --> Allowed fields must be specified for model: App\Models\DataModel
+#0 C:\xampp\htdocs\Codeinteger\system\BaseModel.php(1138): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Data...')
+#1 C:\xampp\htdocs\Codeinteger\system\BaseModel.php(841): CodeIgniter\BaseModel->doProtectFields(Array)
+#2 C:\xampp\htdocs\Codeinteger\system\Model.php(646): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(89): CodeIgniter\Model->update('', Array)
+#4 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->edit()
+#5 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#6 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-11-18 21:54:53 --> Allowed fields must be specified for model: App\Models\DataModel
+#0 C:\xampp\htdocs\Codeinteger\system\BaseModel.php(1138): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Data...')
+#1 C:\xampp\htdocs\Codeinteger\system\BaseModel.php(841): CodeIgniter\BaseModel->doProtectFields(Array)
+#2 C:\xampp\htdocs\Codeinteger\system\Model.php(646): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(89): CodeIgniter\Model->update('', Array)
+#4 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->edit()
+#5 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#6 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-11-18 21:55:21 --> Allowed fields must be specified for model: App\Models\DataModel
+#0 C:\xampp\htdocs\Codeinteger\system\BaseModel.php(1138): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Data...')
+#1 C:\xampp\htdocs\Codeinteger\system\BaseModel.php(841): CodeIgniter\BaseModel->doProtectFields(Array)
+#2 C:\xampp\htdocs\Codeinteger\system\Model.php(646): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(89): CodeIgniter\Model->update('', Array)
+#4 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->edit()
+#5 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#6 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-11-18 21:56:20 --> Allowed fields must be specified for model: App\Models\DataModel
+#0 C:\xampp\htdocs\Codeinteger\system\BaseModel.php(1138): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Data...')
+#1 C:\xampp\htdocs\Codeinteger\system\BaseModel.php(841): CodeIgniter\BaseModel->doProtectFields(Array)
+#2 C:\xampp\htdocs\Codeinteger\system\Model.php(646): CodeIgniter\BaseModel->update(Array, Array)
+#3 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(90): CodeIgniter\Model->update('', Array)
+#4 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->edit()
+#5 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#6 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2021-11-18 22:26:11 --> Column 'Fname_en' cannot be null
+ERROR - 2021-11-18 22:27:13 --> Column 'Fname_en' cannot be null
+ERROR - 2021-11-18 22:27:23 --> Column 'Fname_en' cannot be null
+ERROR - 2021-11-18 22:27:35 --> Column 'Fname_en' cannot be null
+ERROR - 2021-11-18 22:29:40 --> Column 'Fname_en' cannot be null
+CRITICAL - 2021-11-18 22:29:40 --> Allowed fields must be specified for model: App\Models\DataModel
+#0 C:\xampp\htdocs\Codeinteger\system\BaseModel.php(1138): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Data...')
+#1 C:\xampp\htdocs\Codeinteger\system\BaseModel.php(713): CodeIgniter\BaseModel->doProtectFields(Array)
+#2 C:\xampp\htdocs\Codeinteger\system\Model.php(620): CodeIgniter\BaseModel->insert(Array, true)
+#3 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(102): CodeIgniter\Model->insert(Array)
+#4 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->add()
+#5 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#6 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-11-18 22:31:42 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::insert()
+#0 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(99): App\Models\DataModel->insertData('tb_patient', Array)
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->add()
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#3 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-11-18 22:31:51 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::insert()
+#0 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(99): App\Models\DataModel->insertData('tb_patient', Array)
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->add()
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#3 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-11-18 22:31:56 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::insert()
+#0 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(99): App\Models\DataModel->insertData('tb_patient', Array)
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->add()
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#3 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2021-11-18 22:34:49 --> Column 'Fname_en' cannot be null
+ERROR - 2021-11-18 23:56:43 --> Unknown column 'nation' in 'field list'
+ERROR - 2021-11-18 23:57:11 --> Unknown column 'nation' in 'field list'
+ERROR - 2021-11-18 23:59:18 --> Unknown column 'nation' in 'field list'
+CRITICAL - 2021-11-18 23:59:18 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::_compile_select()
+#0 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(131): App\Models\DataModel->updateData(Array, 'tb_patient', Array)
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->add()
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#3 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2021-11-18 23:59:25 --> Unknown column 'nation' in 'field list'
+CRITICAL - 2021-11-18 23:59:25 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::compile_select()
+#0 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(131): App\Models\DataModel->updateData(Array, 'tb_patient', Array)
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->add()
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#3 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2021-11-18 23:59:56 --> Unknown column 'nation' in 'field list'
+CRITICAL - 2021-11-18 23:59:56 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::last_query()
+#0 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(131): App\Models\DataModel->updateData(Array, 'tb_patient', Array)
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->add()
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#3 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}

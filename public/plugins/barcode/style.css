@@ -1,0 +1,141 @@
+body{
+    background:#fff;
+    font-family: 'Open Sans', sans-serif;
+	width:550px;
+}
+
+#main{
+    width:800px;
+    display: table;
+    margin: 0 auto;
+    background:#fff;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+   /*box-shadow:0 1px 2px hsla(0, 0%, 0%, 0.3);
+    margin-top:100px;*/
+}
+
+.innermain{
+    margin-left:auto;
+    margin-right:auto;
+    margin:0px;
+    text-align: center;
+}
+
+.inner-top{
+    width:500px;
+    margin-top:50px;
+}
+
+#userInput{
+	float:left;
+	cursor:none;
+}
+
+#barcodeType{
+	float:left;
+}
+
+#barcode{
+    margin-top:0px;
+    margin-bottom:0px;
+}
+
+#inputs{
+
+}
+
+#title{
+    display:inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    line-height: 90%;
+    margin-bottom:50px;
+}
+
+#title a:link{
+    text-decoration: none;
+    color: #000;
+}
+
+#title a:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+#title a:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+#title a:active {
+    text-decoration: underline;
+    color: #000;
+}
+
+#invalid{
+    opacity: 0;
+    color:#DE0000;
+    margin-top:0px;
+}
+
+#options-button{
+    width:100%;
+}
+
+.box{
+    margin-left:0px;
+    margin-right:0px;
+    padding-left:0px;
+    padding-right:0px;
+}
+
+#userInputGroup{
+	float:left;
+    width:100%;
+}
+
+#options{
+    width:70%;
+    float:left;
+}
+
+#options-display{
+
+}
+
+#options-names{
+    float:left;
+}
+
+#options-names span{
+    display:block;
+    height:20px;
+    margin-bottom:20px;
+    font-size:20px;
+    margin-top:-10px;
+    text-align:right;
+    margin-right:5px;
+}
+#checkbox-options{
+	
+}
+
+#checkbox-options input{
+    margin-left:20px;
+}
+
+#options-display span{
+    display:block;
+    height:20px;
+    margin-bottom:20px;
+    font-size:20px;
+    margin-top:-10px;
+}
+@media print
+{
+	#hidden_pr{
+		display:none;
+	}
+}

@@ -1,0 +1,1042 @@
+CRITICAL - 2021-11-14 20:21:29 --> Invalid file: pages/dashboard/.php
+#0 C:\xampp\htdocs\Codeinteger\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/dashboard...')
+#1 C:\xampp\htdocs\Codeinteger\system\Common.php(1097): CodeIgniter\View\View->render('pages/dashboard...', Array, true)
+#2 C:\xampp\htdocs\Codeinteger\app\Controllers\Dashboard.php(31): view('pages/dashboard...')
+#3 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Dashboard->view()
+#4 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#5 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-11-14 20:21:44 --> Invalid file: pages/dashboard/.php
+#0 C:\xampp\htdocs\Codeinteger\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/dashboard...')
+#1 C:\xampp\htdocs\Codeinteger\system\Common.php(1097): CodeIgniter\View\View->render('pages/dashboard...', Array, true)
+#2 C:\xampp\htdocs\Codeinteger\app\Controllers\Dashboard.php(31): view('pages/dashboard...')
+#3 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Dashboard->view()
+#4 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#5 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-11-14 21:07:08 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Dashboard->active()
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 21:08:40 --> Invalid file: pages/.php
+#0 C:\xampp\htdocs\Codeinteger\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/.php')
+#1 C:\xampp\htdocs\Codeinteger\system\Common.php(1097): CodeIgniter\View\View->render('pages/', Array, true)
+#2 C:\xampp\htdocs\Codeinteger\app\Controllers\Dashboard.php(28): view('pages/')
+#3 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Dashboard->index()
+#4 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#5 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-11-14 21:13:11 --> Class 'App\Controllers\CI_Controller' not found
+#0 C:\xampp\htdocs\Codeinteger\system\Autoloader\Autoloader.php(264): include_once()
+#1 C:\xampp\htdocs\Codeinteger\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Codeinteger\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#4 [internal function]: spl_autoload_call('App\\Controllers...')
+#5 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#6 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#7 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-11-14 21:13:13 --> Class 'App\Controllers\CI_Controller' not found
+#0 C:\xampp\htdocs\Codeinteger\system\Autoloader\Autoloader.php(264): include_once()
+#1 C:\xampp\htdocs\Codeinteger\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Codeinteger\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#4 [internal function]: spl_autoload_call('App\\Controllers...')
+#5 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#6 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#7 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-11-14 21:13:15 --> Class 'App\Controllers\CI_Controller' not found
+#0 C:\xampp\htdocs\Codeinteger\system\Autoloader\Autoloader.php(264): include_once()
+#1 C:\xampp\htdocs\Codeinteger\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Codeinteger\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#4 [internal function]: spl_autoload_call('App\\Controllers...')
+#5 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#6 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#7 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-11-14 21:13:17 --> Class 'App\Controllers\CI_Controller' not found
+#0 C:\xampp\htdocs\Codeinteger\system\Autoloader\Autoloader.php(264): include_once()
+#1 C:\xampp\htdocs\Codeinteger\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Codeinteger\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#4 [internal function]: spl_autoload_call('App\\Controllers...')
+#5 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#6 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#7 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-11-14 21:13:29 --> Class 'App\Controllers\CI_Controller' not found
+#0 C:\xampp\htdocs\Codeinteger\system\Autoloader\Autoloader.php(264): include_once()
+#1 C:\xampp\htdocs\Codeinteger\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Codeinteger\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#4 [internal function]: spl_autoload_call('App\\Controllers...')
+#5 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#6 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#7 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-11-14 21:14:19 --> Class 'App\Controllers\CI_Controller' not found
+#0 C:\xampp\htdocs\Codeinteger\system\Autoloader\Autoloader.php(264): include_once()
+#1 C:\xampp\htdocs\Codeinteger\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Codeinteger\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#4 [internal function]: spl_autoload_call('App\\Controllers...')
+#5 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#6 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#7 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-11-14 21:24:54 --> Class 'App\Controllers\CI_Controller' not found
+#0 C:\xampp\htdocs\Codeinteger\system\Autoloader\Autoloader.php(264): include_once()
+#1 C:\xampp\htdocs\Codeinteger\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Codeinteger\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#4 C:\xampp\htdocs\Codeinteger\app\Controllers\Home.php(4): spl_autoload_call('App\\Controllers...')
+#5 C:\xampp\htdocs\Codeinteger\system\Autoloader\Autoloader.php(264): include_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\Codeinteger\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\Codeinteger\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#8 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#9 [internal function]: spl_autoload_call('App\\Controllers...')
+#10 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#11 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#12 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2021-11-14 21:44:08 --> strpos() expects parameter 1 to be string, array given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'strpos() expect...', 'C:\\xampp\\htdocs...', 422, Array)
+#1 C:\xampp\htdocs\Codeinteger\system\Router\Router.php(422): strpos(Array, '$')
+#2 C:\xampp\htdocs\Codeinteger\system\Router\Router.php(155): CodeIgniter\Router\Router->checkRoutes('dashboard/activ...')
+#3 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('dashboard/activ...')
+#4 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#5 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-11-14 21:48:32 --> Argument 2 passed to view() must be of the type array, null given, called in C:\xampp\htdocs\Codeinteger\app\Controllers\Dashboard.php on line 49
+#0 C:\xampp\htdocs\Codeinteger\app\Controllers\Dashboard.php(49): view('templates/heade...', NULL)
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Dashboard->active()
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-11-14 21:48:41 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Dashboard->appointment()
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 21:49:07 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Dashboard->appointment()
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 21:49:34 --> Argument 2 passed to view() must be of the type array, null given, called in C:\xampp\htdocs\Codeinteger\app\Controllers\Dashboard.php on line 49
+#0 C:\xampp\htdocs\Codeinteger\app\Controllers\Dashboard.php(49): view('templates/heade...', NULL)
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Dashboard->active()
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-11-14 21:50:40 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\Codeinteger\app\Controllers\Dashboard.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 49, Array)
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Dashboard->active()
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-11-14 21:50:42 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\Codeinteger\app\Controllers\Dashboard.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 49, Array)
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Dashboard->active()
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-11-14 21:51:16 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\Codeinteger\app\Controllers\Dashboard.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 49, Array)
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Dashboard->active()
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-11-14 21:51:58 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\Codeinteger\app\Controllers\Dashboard.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 49, Array)
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Dashboard->active()
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-11-14 21:53:57 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\Codeinteger\app\Controllers\Dashboard.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 49, Array)
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Dashboard->active()
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-11-14 21:54:13 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\Codeinteger\app\Controllers\Dashboard.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 49, Array)
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Dashboard->active()
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-11-14 21:58:00 --> Invalid file: pages/active.php
+#0 C:\xampp\htdocs\Codeinteger\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/active.ph...')
+#1 C:\xampp\htdocs\Codeinteger\system\Common.php(1097): CodeIgniter\View\View->render('pages/active', Array, true)
+#2 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(26): view('pages/active')
+#3 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->index()
+#4 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#5 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-11-14 21:58:24 --> Invalid file: pages/active.php
+#0 C:\xampp\htdocs\Codeinteger\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/active.ph...')
+#1 C:\xampp\htdocs\Codeinteger\system\Common.php(1097): CodeIgniter\View\View->render('pages/active', Array, true)
+#2 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(26): view('pages/active')
+#3 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->index()
+#4 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#5 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-11-14 21:58:25 --> Invalid file: pages/active.php
+#0 C:\xampp\htdocs\Codeinteger\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/active.ph...')
+#1 C:\xampp\htdocs\Codeinteger\system\Common.php(1097): CodeIgniter\View\View->render('pages/active', Array, true)
+#2 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(26): view('pages/active')
+#3 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->index()
+#4 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#5 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-11-14 22:02:17 --> Call to undefined function App\Controllers\all_patient()
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->index()
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 22:02:19 --> Call to undefined function App\Controllers\all_patient()
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->index()
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 22:02:26 --> Use of undefined constant all_patient - assumed 'all_patient' (this will throw an Error in a future version of PHP)
+#0 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', 'C:\\xampp\\htdocs...', 28, Array)
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->index()
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#3 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-11-14 22:02:38 --> Invalid file: all_patient.php
+#0 C:\xampp\htdocs\Codeinteger\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('all_patient.php')
+#1 C:\xampp\htdocs\Codeinteger\system\Common.php(1097): CodeIgniter\View\View->render('all_patient', Array, true)
+#2 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(28): view('all_patient')
+#3 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->index()
+#4 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#5 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-11-14 22:07:03 --> Invalid file: patient/$1.php
+#0 C:\xampp\htdocs\Codeinteger\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('patient/$1.php')
+#1 C:\xampp\htdocs\Codeinteger\system\Common.php(1097): CodeIgniter\View\View->render('patient/$1', Array, true)
+#2 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(30): view('patient/$1')
+#3 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('$1')
+#4 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#5 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-11-14 22:07:50 --> Invalid file: patient/$1.php
+#0 C:\xampp\htdocs\Codeinteger\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('patient/$1.php')
+#1 C:\xampp\htdocs\Codeinteger\system\Common.php(1097): CodeIgniter\View\View->render('patient/$1', Array, true)
+#2 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(30): view('patient/$1', Array)
+#3 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('$1')
+#4 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#5 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-11-14 22:08:05 --> Invalid file: patient/$1.php
+#0 C:\xampp\htdocs\Codeinteger\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('patient/$1.php')
+#1 C:\xampp\htdocs\Codeinteger\system\Common.php(1097): CodeIgniter\View\View->render('patient/$1', Array, true)
+#2 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(31): view('patient/$1', Array)
+#3 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('$1')
+#4 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#5 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-11-14 22:08:21 --> Invalid file: patient/$1.php
+#0 C:\xampp\htdocs\Codeinteger\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('patient/$1.php')
+#1 C:\xampp\htdocs\Codeinteger\system\Common.php(1097): CodeIgniter\View\View->render('patient/$1', Array, true)
+#2 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(31): view('patient/$1', Array)
+#3 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('$1')
+#4 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#5 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-11-14 22:09:34 --> Invalid file: patient/$1.php
+#0 C:\xampp\htdocs\Codeinteger\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('patient/$1.php')
+#1 C:\xampp\htdocs\Codeinteger\system\Common.php(1097): CodeIgniter\View\View->render('patient/$1', Array, true)
+#2 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(31): view('patient/$1', Array)
+#3 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('$1')
+#4 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#5 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-11-14 22:09:55 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('$1')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 22:10:16 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('$1')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 22:10:41 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('$1')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 22:10:43 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('$1')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 22:11:15 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('$1')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 22:11:17 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('$1')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 22:12:07 --> Invalid file: patient/all_patient.php
+#0 C:\xampp\htdocs\Codeinteger\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('patient/all_pat...')
+#1 C:\xampp\htdocs\Codeinteger\system\Common.php(1097): CodeIgniter\View\View->render('patient/all_pat...', Array, true)
+#2 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(26): view('patient/all_pat...')
+#3 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->index()
+#4 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#5 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-11-14 22:12:22 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->index()
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 22:15:48 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('icon.ico')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 22:15:50 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('icon.ico')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 22:15:51 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('icon.ico')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 22:17:00 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('icon.ico')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 22:17:03 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('icon.ico')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 22:17:06 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('icon.ico')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 22:19:06 --> Call to undefined method CodeIgniter\View\View::load()
+#0 C:\xampp\htdocs\Codeinteger\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\Codeinteger\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\Codeinteger\system\Common.php(1097): CodeIgniter\View\View->render('patient/all', Array, true)
+#3 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(47): view('patient/all')
+#4 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('all')
+#5 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#6 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-11-14 22:19:06 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('icon.ico')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 22:19:08 --> Call to undefined method CodeIgniter\View\View::load()
+#0 C:\xampp\htdocs\Codeinteger\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\Codeinteger\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\Codeinteger\system\Common.php(1097): CodeIgniter\View\View->render('patient/all', Array, true)
+#3 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(47): view('patient/all')
+#4 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('all')
+#5 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#6 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-11-14 22:19:09 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('icon.ico')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 22:19:13 --> Call to undefined method CodeIgniter\View\View::view()
+#0 C:\xampp\htdocs\Codeinteger\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\Codeinteger\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\Codeinteger\system\Common.php(1097): CodeIgniter\View\View->render('patient/all', Array, true)
+#3 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(47): view('patient/all')
+#4 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('all')
+#5 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#6 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-11-14 22:19:14 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('icon.ico')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 22:19:17 --> Call to undefined method CodeIgniter\View\View::view()
+#0 C:\xampp\htdocs\Codeinteger\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\Codeinteger\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\Codeinteger\system\Common.php(1097): CodeIgniter\View\View->render('patient/all', Array, true)
+#3 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(47): view('patient/all')
+#4 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('all')
+#5 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#6 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-11-14 22:19:18 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('icon.ico')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 22:19:22 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('icon.ico')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 22:20:12 --> Call to a member function view() on null
+#0 C:\xampp\htdocs\Codeinteger\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\Codeinteger\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\Codeinteger\system\Common.php(1097): CodeIgniter\View\View->render('patient/all', Array, true)
+#3 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(47): view('patient/all')
+#4 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('all')
+#5 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#6 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-11-14 22:20:13 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('icon.ico')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 22:20:18 --> Call to a member function view() on null
+#0 C:\xampp\htdocs\Codeinteger\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\Codeinteger\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\Codeinteger\system\Common.php(1097): CodeIgniter\View\View->render('patient/all', Array, true)
+#3 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(47): view('patient/all')
+#4 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('all')
+#5 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#6 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-11-14 22:20:19 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('icon.ico')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 22:20:22 --> Call to a member function view() on null
+#0 C:\xampp\htdocs\Codeinteger\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\Codeinteger\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\Codeinteger\system\Common.php(1097): CodeIgniter\View\View->render('patient/all', Array, true)
+#3 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(47): view('patient/all')
+#4 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('all')
+#5 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#6 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-11-14 22:20:23 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('icon.ico')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 22:20:42 --> Call to a member function view() on null
+#0 C:\xampp\htdocs\Codeinteger\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\Codeinteger\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\Codeinteger\system\Common.php(1097): CodeIgniter\View\View->render('patient/all', Array, true)
+#3 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(47): view('patient/all')
+#4 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('all')
+#5 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#6 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-11-14 22:20:42 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('icon.ico')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 22:20:51 --> include(search): failed to open stream: No such file or directory
+#0 C:\xampp\htdocs\Codeinteger\app\Views\patient\all.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(search)...', 'C:\\xampp\\htdocs...', 2, Array)
+#1 C:\xampp\htdocs\Codeinteger\app\Views\patient\all.php(2): include()
+#2 C:\xampp\htdocs\Codeinteger\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\Codeinteger\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\xampp\htdocs\Codeinteger\system\Common.php(1097): CodeIgniter\View\View->render('patient/all', Array, true)
+#5 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(47): view('patient/all')
+#6 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('all')
+#7 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#8 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-11-14 22:20:52 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('icon.ico')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 22:20:55 --> Call to a member function userdata() on null
+#0 C:\xampp\htdocs\Codeinteger\app\Views\patient\all.php(2): include()
+#1 C:\xampp\htdocs\Codeinteger\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Codeinteger\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Codeinteger\system\Common.php(1097): CodeIgniter\View\View->render('patient/all', Array, true)
+#4 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(47): view('patient/all')
+#5 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('all')
+#6 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#7 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-11-14 22:20:56 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('icon.ico')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 22:21:08 --> Call to a member function userdata() on null
+#0 C:\xampp\htdocs\Codeinteger\app\Views\patient\all.php(2): require()
+#1 C:\xampp\htdocs\Codeinteger\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Codeinteger\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Codeinteger\system\Common.php(1097): CodeIgniter\View\View->render('patient/all', Array, true)
+#4 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(47): view('patient/all')
+#5 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('all')
+#6 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#7 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-11-14 22:21:09 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('icon.ico')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 22:21:13 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('icon.ico')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 22:21:34 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('icon.ico')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 22:21:49 --> Call to a member function view() on null
+#0 C:\xampp\htdocs\Codeinteger\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\Codeinteger\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\Codeinteger\system\Common.php(1097): CodeIgniter\View\View->render('patient/all', Array, true)
+#3 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(47): view('patient/all')
+#4 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('all')
+#5 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#6 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-11-14 22:21:50 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('icon.ico')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 22:22:02 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('icon.ico')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 22:24:49 --> Invalid file: tools/search.php
+#0 C:\xampp\htdocs\Codeinteger\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('tools/search.ph...')
+#1 C:\xampp\htdocs\Codeinteger\system\Common.php(1097): CodeIgniter\View\View->render('tools/search', Array, true)
+#2 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(48): view('tools/search', Array)
+#3 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('all')
+#4 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#5 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-11-14 22:24:50 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('icon.ico')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 22:25:35 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('icon.ico')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 22:31:29 --> Call to a member function view() on null
+#0 C:\xampp\htdocs\Codeinteger\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\Codeinteger\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\Codeinteger\system\Common.php(1097): CodeIgniter\View\View->render('patient/all', Array, true)
+#3 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(47): view('patient/all')
+#4 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('all')
+#5 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#6 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-11-14 22:31:29 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('icon.ico')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 22:31:42 --> Call to a member function view() on null
+#0 C:\xampp\htdocs\Codeinteger\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\Codeinteger\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\Codeinteger\system\Common.php(1097): CodeIgniter\View\View->render('patient/all', Array, true)
+#3 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(47): view('patient/all')
+#4 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('all')
+#5 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#6 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-11-14 22:31:43 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('icon.ico')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 22:32:12 --> Call to a member function view() on null
+#0 C:\xampp\htdocs\Codeinteger\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\Codeinteger\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\Codeinteger\system\Common.php(1097): CodeIgniter\View\View->render('patient/all', Array, true)
+#3 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(47): view('patient/all')
+#4 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('all')
+#5 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#6 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-11-14 22:32:12 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('icon.ico')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 22:32:55 --> Invalid file: http://localhost:8080tools/search.php
+#0 C:\xampp\htdocs\Codeinteger\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('http://localhos...')
+#1 C:\xampp\htdocs\Codeinteger\system\Common.php(1097): CodeIgniter\View\View->render('http://localhos...', Array, true)
+#2 C:\xampp\htdocs\Codeinteger\app\Views\patient\all.php(1): view('http://localhos...')
+#3 C:\xampp\htdocs\Codeinteger\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\Codeinteger\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\xampp\htdocs\Codeinteger\system\Common.php(1097): CodeIgniter\View\View->render('patient/all', Array, true)
+#6 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(47): view('patient/all')
+#7 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('all')
+#8 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#9 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2021-11-14 22:32:56 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('icon.ico')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 22:33:02 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('icon.ico')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 22:33:23 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('icon.ico')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 22:33:57 --> Argument 2 passed to view() must be of the type array, null given, called in C:\xampp\htdocs\Codeinteger\app\Views\patient\all.php on line 1
+#0 C:\xampp\htdocs\Codeinteger\app\Views\patient\all.php(1): view('tools/search', NULL)
+#1 C:\xampp\htdocs\Codeinteger\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Codeinteger\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Codeinteger\system\Common.php(1097): CodeIgniter\View\View->render('patient/all', Array, true)
+#4 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(47): view('patient/all')
+#5 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('all')
+#6 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#7 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-11-14 22:33:58 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('icon.ico')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 22:34:13 --> Argument 2 passed to view() must be of the type array, null given, called in C:\xampp\htdocs\Codeinteger\app\Views\patient\all.php on line 1
+#0 C:\xampp\htdocs\Codeinteger\app\Views\patient\all.php(1): view('tools/search', NULL)
+#1 C:\xampp\htdocs\Codeinteger\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Codeinteger\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Codeinteger\system\Common.php(1097): CodeIgniter\View\View->render('patient/all', Array, true)
+#4 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(47): view('patient/all')
+#5 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('all')
+#6 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#7 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-11-14 22:34:14 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('icon.ico')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 22:34:18 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('icon.ico')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 22:35:51 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('icon.ico')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 22:42:49 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('icon.ico')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 22:42:50 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('icon.ico')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 22:46:25 --> Invalid file: http://localhost:8080css/style.css
+#0 C:\xampp\htdocs\Codeinteger\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('http://localhos...')
+#1 C:\xampp\htdocs\Codeinteger\system\Common.php(1097): CodeIgniter\View\View->render('http://localhos...', Array, true)
+#2 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(45): view('http://localhos...')
+#3 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('all')
+#4 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#5 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-11-14 22:46:26 --> Invalid file: http://localhost:8080css/style.css
+#0 C:\xampp\htdocs\Codeinteger\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('http://localhos...')
+#1 C:\xampp\htdocs\Codeinteger\system\Common.php(1097): CodeIgniter\View\View->render('http://localhos...', Array, true)
+#2 C:\xampp\htdocs\Codeinteger\app\Controllers\Patient.php(45): view('http://localhos...')
+#3 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('all')
+#4 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#5 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-11-14 22:46:39 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('icon.ico')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 22:48:14 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('icon.ico')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 22:51:41 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('icon.ico')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 22:52:26 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('icon.ico')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 22:55:47 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('icon.ico')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 22:58:06 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('icon.ico')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 22:58:22 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('icon.ico')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 23:50:58 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('icon.ico')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 23:51:44 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('icon.ico')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 23:53:12 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('icon.ico')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 23:53:34 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('icon.ico')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 23:53:58 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('icon.ico')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 23:54:31 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('icon.ico')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 23:55:42 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('icon.ico')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 23:56:22 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('icon.ico')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 23:56:41 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('icon.ico')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 23:56:53 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('icon.ico')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 23:57:37 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('icon.ico')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 23:57:51 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('icon.ico')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 23:58:02 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('icon.ico')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 23:58:35 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('icon.ico')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 23:58:50 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('icon.ico')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 23:59:14 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('icon.ico')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-14 23:59:33 --> Class 'CodeIgniter\Exceptions\PageNoteFoundException' not found
+#0 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(824): App\Controllers\Patient->view('icon.ico')
+#1 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\Codeinteger\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Codeinteger\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\Codeinteger\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}

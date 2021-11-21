@@ -1,0 +1,4 @@
+CRITICAL - 2021-11-20 05:23:22 --> Call to undefined function CodeIgniter\locale_set_default()
+#0 /Applications/XAMPP/xamppfiles/htdocs/codeigniter_yos/system/bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#1 /Applications/XAMPP/xamppfiles/htdocs/codeigniter_yos/public/index.php(28): require('/Applications/X...')
+#2 {main}

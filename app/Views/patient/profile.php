@@ -405,7 +405,7 @@ $(document).ready(function(){
 	 	table: 'tb_titlename',
 		field: 'title_name',
 		name: 'title_name',
-    where: 'jsonString',
+    where: 'Stat',
 	 },
 	 cache: false,
 	 success: function (result) { alert(result);

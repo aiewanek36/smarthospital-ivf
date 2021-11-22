@@ -161,6 +161,7 @@ class Patient extends Controller
             $sr['table'] = $this->request->getVar('table');
             $sr['field'] = $this->request->getVar('field');
             $sr['name'] = $this->request->getVar('name'); 
+            $sr['func'] = $this->request->getVar('func'); 
             $sr['where'] = $this->request->getPost('where');
             $response = $Pt->getSelectAll($sr);
             echo json_encode($response);

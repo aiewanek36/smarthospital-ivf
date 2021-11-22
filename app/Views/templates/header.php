@@ -15,6 +15,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@100&display=swap" rel="stylesheet">
 <link href="<?php echo base_url("plugins/bootstrap-datepicker/css/datepicker.css");?>" rel="stylesheet" />
 <link href="<?php echo base_url("plugins/select2/select2.min.css")?>" rel="stylesheet" />
+<link href="<?php echo base_url("plugins/fancyBox/source/jquery.fancybox.css");?>" rel="stylesheet" />
 
 <style>
 body {

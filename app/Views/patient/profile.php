@@ -8,48 +8,86 @@
   input[type=text]:disabled {
     background: #dddddd;
   }
+  input[type=checkbox]
+  {
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+  padding: 10px;
+  }
+  
 </style>
 <? $patient = $patient[0];
    
 	
 ?>
+
+
+
 <form  id="add-form" onsubmit="return Check_Img();"  method="post" action="<?=site_url('patient/add');?>">
 <!-- Send VN -->
 
 
-
-
-
-<div class="row mt-2 mb-2 justify-content-center ">
-    <div class="table-responsive col-12 col-lg-6 ">
-        <table  class="table t justify-content-center"  >
-            <tbody>
-                <tr>
-                	<td>Visit By :</td>
-                    <td>Female</td>
-                    <td>Male</td>
-                </tr>
-                <tr>
-                	<td>Detail :</td>
-                    <td>Female</td>
-                    <td>Male</td>
-                </tr>
-                <tr>
-                	<td></td>
-                    <td>Female</td>
-                    <td>Male</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+<div  class="row mt-2 mb-2 justify-content-center ">
+    
     <div class="col-md-12 pt-2 text-center">
      <a href="<?php echo base_url('patient/profile')?>">
      <button type="button" name="button" id="new"   value="New" class="btn btn-xs green  pt-2 pb-2" style="width:120px"  ><i class="fa fa-plus" style="font-size:24px"></i><br /><strong>New</strong></button> 
      </a>
      <button type="submit" name="button" id="save"   value="Save" class="btn btn-xs blue  pt-2 pb-2" style="width:120px"  ><i class="fa fa-floppy-o" style="font-size:24px"></i><br /><strong>Save</strong></span></button> 
-     <button type="submit" name="button" id="send"   value="Send" class="btn btn-xs yellow  pt-2 pb-2" style="width:120px"  ><i class="fa fa-share-square-o" style="font-size:24px"></i><br /><strong>Send VN</strong></button> 
+     
+     <a href="#divSend" id="SendForm">
+          <button type="button" name="button" id="Send"   value="Send" class="btn btn-xs yellow fancybox pt-2 pb-2" style="width:120px"  ><i class="fa fa-share-square-o" style="font-size:24px"></i><br /><strong>Send VN</strong></button> 
+
+     </a>
     </div>
 </div>
+
+
+<div id="divSend" style="display:none">
+  		 <div class="table-responsive">
+            <table class="table table-user-information justify-content-center" >
+            <tbody>
+                <tr>
+                	<td align="right"><strong>Visit By:</strong></td>
+                    <td align="center" bgcolor="#FFCCFF"><strong>
+                      <input type="checkbox" name="send_f" id="send_f" value="f"  onchange="switch_visit(this)" checked="checked" />
+                      &nbsp; &nbsp; &nbsp;
+                    <?=getName($patient['id_hn'])?></strong></td>
+                    <td align="center" bgcolor="#99CCFF"><strong>
+                       <input type="checkbox" name="send_m" id="send_m" value="m"  onchange="switch_visit(this)" checked="checked" /> &nbsp; &nbsp; &nbsp;
+                    <?=getName($patient['spouse'])?></strong></td>
+                </tr>
+                <tr>
+                  <td align="right"><strong>Doctor Visit:</strong></td>
+                  <td align="center" bgcolor="#FFFFFF"><select  id="doctor_f"  class="form-select mx-auto w-100"></select></td>
+                  <td align="center" bgcolor="#FFFFFF"><select  id="doctor_m"  class="form-select mx-auto w-100"></select></td>
+                </tr>
+                <tr>
+                  <td align="right"><strong>Detail</strong></td>
+                  <td><select  id="select_f" onChange="add_detail(this.value,'f')"  class="form-select mx-auto w-100"></select></td>
+                  <td><select  id="select_m" onChange="add_detail(this.value,'m')" class="form-select mx-auto w-100"></select></td>
+                </tr>
+                <tr>
+                  <td align="right">&nbsp;</td>
+                  <td><textarea name="detail_f" id="detail_f"  class="w-100 "   rows="5"></textarea></td>
+                  <td><textarea name="detail_m" id="detail_m"  class="w-100 "   rows="5"></textarea></td>
+                </tr>
+            </tbody>
+            </table>
+         </div>
+         <div class="row">
+         <div class="col-md-12 text-center">
+                   <button type="button" name="button" id="Send"   value="Send" class="btn btn-xs yellow fancybox pt-2 pb-2" style="width:120px"  ><i class="fa fa-share-square-o" style="font-size:24px"></i><br /><strong>Send VN</strong></button> 
+
+         </div>
+         </div>
+</div>
+
+
+
 <!-- Send VN -->
 <input type="hidden" name="id_hn" id="id_hn" value="<?=$patient['id_hn']?>"  />
 	<!-- Female Data -->
@@ -404,7 +442,7 @@ $(document).ready(function(){
 		field: 'nationality',
 		name: 'nationality',
 	 },
-	 cache: false,
+	 cache: true,
 	 success: function (result) {
 	 		$('#Nationality').find('option').remove().end().append(result).val('<?=$patient['Nationality']?>');
 	 }
@@ -420,7 +458,7 @@ $(document).ready(function(){
 		name: 'title_name',
     where: 'status="EN"',
 	 },
-	 cache: false,
+	 cache: true,
 	 success: function (result) {
 		  $('#Pname_en').find('option').remove().end().append(result).val('<?=$patient['Pname_en']?>');
 	 }
@@ -437,7 +475,7 @@ $(document).ready(function(){
 		name: 'title_name',
     where: 'status="TH"',
 	 },
-	 cache: false,
+	 cache: true,
 	 success: function (result) {
 	 	 $('#Pname').find('option').remove().end().append(result).val('<?=$patient['Pname']?>');
 	   }
@@ -452,12 +490,85 @@ $(document).ready(function(){
 		field: 'name',
 		name: 'name',
 	 },
-	 cache: false,
+	 cache: true,
 	 success: function (result) {
 	 	 $('#PatientType').find('option').remove().end().append(result).val('<?=$patient['PatientType']?>');
 	   }
   });
   
   
+  
+  $.ajax({
+	 type: 'POST',
+	 url: '<?php echo  base_url() ?>/Patient/DataArray',
+	 dataType: 'json',
+	 data: {
+	 	table: 'operation',
+		field: 'name',
+		name: 'name',
+	 },
+	 cache: true,
+	 success: function (result) {
+	 	 $('#select_f').find('option').remove().end().append(result).val('');
+		 $('#select_m').find('option').remove().end().append(result).val('');
+
+	  }
+  });
+  
+  
+  $.ajax({
+	 type: 'POST',
+	 url: '<?php echo  base_url() ?>/Patient/DataArray',
+	 dataType: 'json',
+	 data: {
+	 	table: 'tb_doctor',
+		field: 'id_doctor',
+		name: 'id_doctor',
+		func: 'getDr',
+	 },
+	 cache: true,
+	 success: function (result) {
+	 	 $('#doctor_f').find('option').remove().end().append(result).val('<?=$patient['doctor']?>');
+		 $('#doctor_m').find('option').remove().end().append(result).val('<?=$patient['doctor']?>');
+
+	  }
+  });
+  
 });
+</script>
+<script type="text/javascript">
+  $(function(){
+    $("#SendForm").fancybox({
+			openEffect: 'elastic',
+			closeEffect: 'elastic',
+			prevEffect: 'fade',
+			nextEffect: 'fade',
+			fitToView: false, // images won't be scaled to fit to browser's height
+			maxWidth: "90%", // images won't exceed the browser's width
+			minWidth: "60%" // images won't exceed the browser's width
+		});
+  });
+  
+  function add_detail(value,sex){
+	  var detail =  $('#detail_'+sex).val();
+	  if(detail == ''){
+		  $('#detail_'+sex).val(value);
+	  }else{
+		  $('#detail_'+sex).val(detail+', '+value);
+	  }
+  }
+  
+  function switch_visit(a){
+	  var sex = a.value;
+	  if(a.checked == true){
+		  $('#select_'+sex).css('background-color','#FFF').prop('disabled', false);
+	  	  $('#detail_'+sex).css('background-color','#FFF').prop('readonly', false);
+		  $('#doctor_'+sex).css('background-color','#FFF').prop('readonly', false);
+	  }else{
+		  $('#select_'+sex).css('background-color','#CCC').prop('disabled', true);
+		  $('#detail_'+sex).css('background-color','#CCC').prop('readonly', true);
+		  $('#doctor_'+sex).css('background-color','#CCC').prop('readonly', true);
+	  }
+  }
+  
 </script>

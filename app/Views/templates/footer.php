@@ -21,6 +21,7 @@
 <script src="<?php echo base_url("plugins/bootstrap-datepicker/js/locales/bootstrap-datepicker.th.js");?>" charset="UTF-8"></script>
 <script type="text/javascript" src="<?php echo base_url("plugins/bootstrap-fileinput/bootstrap-fileinput.js");?>"></script>
 <script src="<?php echo base_url("plugins/select2/select2.min.js")?>"></script>
+<script src="<?php echo base_url("plugins/fancyBox/source/jquery.fancybox.js");?>"></script>
 
 <style>
 /* #footer-wrapper {
@@ -38,4 +39,5 @@
     thaiyear: true ,
     autoclose: true            
   }).datepicker("setDate", "0");
+
 </script>

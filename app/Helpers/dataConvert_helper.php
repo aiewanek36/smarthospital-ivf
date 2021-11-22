@@ -50,4 +50,43 @@ if ( ! function_exists('getDr'))
     }   
 }
 
+
+
+if ( ! function_exists('UPimageData'))
+{
+    function UPimageData($path = null,$data = null){
+        $pathCHK = substr(base_url().$path,0,-1);
+         if (!file_exists($pathCHK)) {
+             mkdir($pathCHK,0777);
+         }
+        $Random = createRandom();
+        $imageData = $data;
+        $filteredData = substr($imageData, strpos($imageData, ",")+1);
+        $unencodedData = $filteredData;
+        $img_name = $Random.'.png';
+        helper('filesystem');
+        write_file(FCPATH.$path.$img_name, base64_decode($unencodedData));
+        return $path.$img_name;
+    }   
+}
+
+
+
+if ( ! function_exists('createRandom'))
+{
+    function createRandom(){
+        $chars = "abcdefghijkmnopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        srand((double) microtime() * 1000000);
+        $i = 0;
+        $pass = '';
+        while ($i <= 10) {
+            $num = rand() % 33;
+            $tmp = substr($chars, $num, 1);
+            $pass = $pass . $tmp;
+            $i++;
+        }
+        return date('YmdHis').$pass;
+    }   
+}
+
 ?>

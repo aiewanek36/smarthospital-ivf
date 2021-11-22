@@ -84,7 +84,15 @@ class Patient extends Controller
         $Pt = new DataModel();
         $table = 'tb_patient';
         $id = $this->request->getVar('id_hn');
+        $picture = $this->request->getVar('pic');
+        $exp = substr($picture,0,4);
+        if ($exp=='data' && $picture!=''){
+            $picture = UPimageData('/assets/picture/',$picture);
+        }else{
+            $picture = $picture;
+        }
         $data = [
+            'picture' => $picture,
             'id_facebook' => $this->request->getVar('id_facebook'),
             'id_wechat' => $this->request->getVar('id_wechat'),
             'id_line' => $this->request->getVar('id_line'),

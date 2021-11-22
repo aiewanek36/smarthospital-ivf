@@ -6,8 +6,8 @@
 		height: auto !important;
 	}
 </style>
-<? $patient = $patient[0]; ?>
-<form  id="add-form"  method="post" action="<?=site_url('patient/add');?>">
+<? $patient = $patient[0];  ?>
+<form  id="add-form" onsubmit="return Check_Img();"  method="post" action="<?=site_url('patient/add');?>">
 <input type="hidden" name="id_hn" id="id_hn" value="<?=$patient['id_hn']?>"  />
 <div class="row">
 	<!-- Female Data -->
@@ -27,7 +27,9 @@
            <fieldset style="background-color:#f4f4f4;text-align:center">
                     <div class="fileinput fileinput-new" data-provides="fileinput">
                         <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="max-width:230px; max-height: 170px;">
-                            <img src="" style="max-width:220px; max-height: 160px;">
+                            <? if(!empty($patient["Picture"])){ ?>    
+                              <img src="<?=base_url().$patient["Picture"]?>" style="max-width:220px; max-height: 160px;">
+                            <? } ?>
                             <i class='fa fa-user' style="font-size:150px; color:#39F"></i>
                         </div>
                     </div>
@@ -54,7 +56,7 @@
                 </div>
                 <div id="take_img" style="display:none">
                         <div id="cam">
-                        	<input type="text" id="name_pic" name="pic" value="<?=$row_check['name_pic'];?>" style="display:none">
+                        	<input type="text" id="name_pic" name="pic" value="<?=$patient["Picture"];?>" style="display:none">
                             <div id="my_camera" style="margin:5px;"></div>
                              <div id="rs_cam" style="margin:3px;"></div>
                             <button type="button" class="btn green-seagreen" onClick="take()"> <i class="fa fa-lg fa-camera"></i> Take </button>
@@ -325,10 +327,6 @@ function IDCardOpenScanner(){
 			var img = $('#name_pic').val();
         }
         $('#name_pic').val(img);
-        var id_hn = '<?=$id_hn;?>';
-        if (id_hn <= 0) {
-            var type_new = $('#type_new').val();
-        } 
 	}
 </script>
 <script src="<?php echo base_url("plugins/js/jquery-1.11.3.min.js");?>"></script>

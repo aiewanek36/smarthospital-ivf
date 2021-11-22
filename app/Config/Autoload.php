@@ -45,7 +45,7 @@ class Autoload extends AutoloadConfig
     public $psr4 = [
         'Config'      => APPPATH . 'Config',
         APP_NAMESPACE => APPPATH, 
-        'Helpers'     => APPPATH . 'Helpers/dataConvert'];
+        'Helpers'     => APPPATH . 'Helpers/dataConvert','Helpers/generate'];
     
     
     /**

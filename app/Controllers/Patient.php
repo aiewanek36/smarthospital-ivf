@@ -7,7 +7,7 @@ use App\Models\DataModel;
 
 class Patient extends Controller
 { 
-    protected $helpers = ['dataConvert','form','html'];
+    protected $helpers = ['dataConvert','generate','form','html'];
     
 
     public function index($page = 'all'){
@@ -75,21 +75,37 @@ class Patient extends Controller
         $sr['table'] = 'tb_patient';
         $sr['where'] = array('id_hn =' => $id);
         $data['patient'] = $Pt->selectAll($sr);
-        
         echo view('patient/profile', $data);
+
+        if($data['patient'][0]['spouse'] <> ''){
+            $sr2['table'] = 'tb_patient';
+            $sr2['where'] = array('id_hn =' => $data['patient'][0]['spouse']);
+            $data2['spouse'] = $Pt->selectAll($sr2);
+            echo view('patient/view_profile', $data2);
+        }
+        
         echo view('templates/footer', $data);
     }
+
+    public function view_profile($id=null){
+        $Pt = new DataModel();
+        $sr['table'] = 'tb_patient';
+        $sr['where'] = array('id_hn =' => $id);
+        $data['profile'] = $Pt->selectAll($sr);
+    }
+
+
 
     public function add(){
         $Pt = new DataModel();
         $table = 'tb_patient';
         $id = $this->request->getVar('id_hn');
-        $picture = $this->request->getVar('pic');
+        $picture = $this->request->getVar('name_pic');
         $exp = substr($picture,0,4);
         if ($exp=='data' && $picture!=''){
             $picture = UPimageData('/assets/picture/',$picture);
         }else{
-            $picture = $picture;
+            $picture = $this->request->getVar('picture');
         }
         $data = [
             'picture' => $picture,
@@ -117,19 +133,27 @@ class Patient extends Controller
             'province' => $this->request->getVar('province'),
             'zipcode' => $this->request->getVar('zipcode'),
             'Note' => $this->request->getVar('Note'),
+            'underlying' => $this->request->getVar('underlying'),
+            'drug_allergy' => $this->request->getVar('drug_allergy'),
         ];
          if(empty($id)){
-            $data = [
-                'DateIn' => $this->request->getVar('DateIn'),
-                'HN' => $this->request->getVar('HN'),
-            ];
+           $HN = $this->request->getVar('HN');
+           if(empty($HN)){ $HN = genHN();}
+            $data = array_merge($data, array(
+            'DateIn' => $this->request->getVar('DateIn'),
+            'HN' => $HN,
+            'PatientType' => $this->request->getVar('PatientType'),
+            ));
             $id =  $Pt->insertData($table,$data);
+            return redirect()->to(site_url('patient/profile/'.$id)); 
          }else{
              $where = array('id_hn =' => $id);
              $Pt->updateData($where,$table,$data);
+             return redirect()->back()->withInput($id); 
          }
-        
-         return redirect()->back()->withInput($id); 
+
+         
+       
     }
 
     public function DataArray(){

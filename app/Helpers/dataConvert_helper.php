@@ -10,18 +10,17 @@ if ( ! function_exists('getName'))
         $data = $Pt->selectAll($sr);
         $data = $data[0];
         if($lang == 'TH'){
-            if($sex == 'F'){
+            if($data['Fname'] != ''){
                 if(empty($data['Pname'])) $data['Pname'] = 'คุณ';
                 $fullname = $data['Pname'].$data['Fname'].' '.$data['Lname'];
             }else{
-                if(empty($data['Pname2'])) $data['Pname2'] = 'คุณ';
-                $fullname = $data['Pname2'].$data['Fname2'].' '.$data['Lname2'];
+                $fullname = $data['Pname_en'].$data['Fname_en'].' '.$data['Lname_en'];
             }
         }else{
-            if($sex == 'F'){
+            if($data['Fname_en'] != ''){
                 $fullname = $data['Pname_en'].$data['Fname_en'].' '.$data['Lname_en'];
             }else{
-                $fullname = $data['Pname_en2'].$data['Fname_en2'].' '.$data['Lname_en2'];
+                $fullname = $data['Pname'].$data['Fname'].' '.$data['Lname'];
             }
         }
         return $fullname;
@@ -67,25 +66,6 @@ if ( ! function_exists('UPimageData'))
         helper('filesystem');
         write_file(FCPATH.$path.$img_name, base64_decode($unencodedData));
         return $path.$img_name;
-    }   
-}
-
-
-
-if ( ! function_exists('createRandom'))
-{
-    function createRandom(){
-        $chars = "abcdefghijkmnopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        srand((double) microtime() * 1000000);
-        $i = 0;
-        $pass = '';
-        while ($i <= 10) {
-            $num = rand() % 33;
-            $tmp = substr($chars, $num, 1);
-            $pass = $pass . $tmp;
-            $i++;
-        }
-        return date('YmdHis').$pass;
     }   
 }
 

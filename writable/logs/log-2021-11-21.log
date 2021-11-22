@@ -198,3 +198,163 @@ CRITICAL - 2021-11-21 22:37:37 --> mkdir(): No such file or directory
 #6 C:\xampp\htdocs\smarthospital-ivf\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #7 C:\xampp\htdocs\smarthospital-ivf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
 #8 {main}
+CRITICAL - 2021-11-21 22:52:12 --> Call to undefined function App\Controllers\genHN()
+#0 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(826): App\Controllers\Patient->add()
+#1 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\smarthospital-ivf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\smarthospital-ivf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-21 22:53:49 --> Call to undefined function App\Controllers\genHN()
+#0 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(826): App\Controllers\Patient->add()
+#1 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\smarthospital-ivf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\smarthospital-ivf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-21 22:55:43 --> Call to undefined function App\Controllers\genHN()
+#0 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(826): App\Controllers\Patient->add()
+#1 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\smarthospital-ivf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\smarthospital-ivf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-21 23:46:14 --> Call to undefined function genHN()
+#0 C:\xampp\htdocs\smarthospital-ivf\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\smarthospital-ivf\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\smarthospital-ivf\system\Common.php(1097): CodeIgniter\View\View->render('patient/profile', Array, true)
+#3 C:\xampp\htdocs\smarthospital-ivf\app\Controllers\Patient.php(79): view('patient/profile', Array)
+#4 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(826): App\Controllers\Patient->profile()
+#5 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#6 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\smarthospital-ivf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\smarthospital-ivf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-11-21 23:47:21 --> Call to undefined function App\Controllers\genHN()
+#0 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(826): App\Controllers\Patient->add()
+#1 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\smarthospital-ivf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\smarthospital-ivf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-21 23:47:33 --> Call to undefined function App\Controllers\genHN()
+#0 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(826): App\Controllers\Patient->add()
+#1 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\smarthospital-ivf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\smarthospital-ivf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-21 23:47:47 --> Call to undefined function App\Controllers\genHN()
+#0 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(826): App\Controllers\Patient->add()
+#1 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\smarthospital-ivf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\smarthospital-ivf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-21 23:48:54 --> Call to undefined function App\Controllers\genHN()
+#0 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(826): App\Controllers\Patient->add()
+#1 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\smarthospital-ivf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\smarthospital-ivf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-21 23:49:09 --> Call to undefined function App\Controllers\genHN()
+#0 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(826): App\Controllers\Patient->add()
+#1 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\smarthospital-ivf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\smarthospital-ivf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-21 23:49:15 --> Call to undefined function App\Controllers\genHN()
+#0 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(826): App\Controllers\Patient->add()
+#1 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\smarthospital-ivf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\smarthospital-ivf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-21 23:49:51 --> Call to undefined function App\Controllers\genHN()
+#0 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(826): App\Controllers\Patient->add()
+#1 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\smarthospital-ivf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\smarthospital-ivf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-21 23:50:23 --> Call to undefined function App\Controllers\genHN()
+#0 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(826): App\Controllers\Patient->add()
+#1 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\smarthospital-ivf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\smarthospital-ivf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-21 23:52:50 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::order_by()
+#0 C:\xampp\htdocs\smarthospital-ivf\app\Helpers\generate_helper.php(32): App\Models\DataModel->selectAll(Array)
+#1 C:\xampp\htdocs\smarthospital-ivf\app\Controllers\Patient.php(90): genHN()
+#2 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(826): App\Controllers\Patient->add()
+#3 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#4 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\smarthospital-ivf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\smarthospital-ivf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-11-21 23:53:00 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::order_by()
+#0 C:\xampp\htdocs\smarthospital-ivf\app\Helpers\generate_helper.php(32): App\Models\DataModel->selectAll(Array)
+#1 C:\xampp\htdocs\smarthospital-ivf\app\Controllers\Patient.php(90): genHN()
+#2 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(826): App\Controllers\Patient->add()
+#3 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#4 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\smarthospital-ivf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\smarthospital-ivf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-11-21 23:55:28 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::order_by()
+#0 C:\xampp\htdocs\smarthospital-ivf\app\Helpers\generate_helper.php(32): App\Models\DataModel->selectAll(Array)
+#1 C:\xampp\htdocs\smarthospital-ivf\app\Controllers\Patient.php(90): genHN()
+#2 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(826): App\Controllers\Patient->add()
+#3 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#4 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\smarthospital-ivf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\smarthospital-ivf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-11-21 23:55:33 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::order_by()
+#0 C:\xampp\htdocs\smarthospital-ivf\app\Helpers\generate_helper.php(32): App\Models\DataModel->selectAll(Array)
+#1 C:\xampp\htdocs\smarthospital-ivf\app\Controllers\Patient.php(90): genHN()
+#2 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(826): App\Controllers\Patient->add()
+#3 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#4 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\smarthospital-ivf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\smarthospital-ivf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+ERROR - 2021-11-21 23:59:03 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'y")."%
+ORDER BY `HN` DESC
+ LIMIT 1' at line 3
+CRITICAL - 2021-11-21 23:59:03 --> Call to a member function getResultArray() on bool
+#0 C:\xampp\htdocs\smarthospital-ivf\app\Helpers\generate_helper.php(34): App\Models\DataModel->selectAll(Array)
+#1 C:\xampp\htdocs\smarthospital-ivf\app\Controllers\Patient.php(90): genHN()
+#2 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(826): App\Controllers\Patient->add()
+#3 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#4 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\smarthospital-ivf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\smarthospital-ivf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+ERROR - 2021-11-21 23:59:12 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%
+ORDER BY `HN` DESC
+ LIMIT 1' at line 3
+CRITICAL - 2021-11-21 23:59:12 --> Call to a member function getResultArray() on bool
+#0 C:\xampp\htdocs\smarthospital-ivf\app\Helpers\generate_helper.php(34): App\Models\DataModel->selectAll(Array)
+#1 C:\xampp\htdocs\smarthospital-ivf\app\Controllers\Patient.php(90): genHN()
+#2 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(826): App\Controllers\Patient->add()
+#3 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#4 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\smarthospital-ivf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\smarthospital-ivf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+ERROR - 2021-11-21 23:59:58 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%"
+ORDER BY `HN` DESC
+ LIMIT 1' at line 3
+CRITICAL - 2021-11-21 23:59:58 --> Call to a member function getResultArray() on bool
+#0 C:\xampp\htdocs\smarthospital-ivf\app\Helpers\generate_helper.php(34): App\Models\DataModel->selectAll(Array)
+#1 C:\xampp\htdocs\smarthospital-ivf\app\Controllers\Patient.php(90): genHN()
+#2 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(826): App\Controllers\Patient->add()
+#3 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#4 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\smarthospital-ivf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\smarthospital-ivf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}

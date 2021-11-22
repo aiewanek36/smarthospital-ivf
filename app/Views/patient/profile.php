@@ -5,14 +5,55 @@
 		width: auto !important;
 		height: auto !important;
 	}
+  input[type=text]:disabled {
+    background: #dddddd;
+  }
 </style>
-<? $patient = $patient[0];  ?>
+<? $patient = $patient[0];
+   
+	
+?>
 <form  id="add-form" onsubmit="return Check_Img();"  method="post" action="<?=site_url('patient/add');?>">
-<input type="hidden" name="id_hn" id="id_hn" value="<?=$patient['id_hn']?>"  />
-<div class="row">
-	<!-- Female Data -->
+<!-- Send VN -->
 
-    <div class="col-12 col-md-12 col-lg-12">
+
+
+
+
+<div class="row mt-2 mb-2 justify-content-center ">
+    <div class="table-responsive col-12 col-lg-6 ">
+        <table  class="table t justify-content-center"  >
+            <tbody>
+                <tr>
+                	<td>Visit By :</td>
+                    <td>Female</td>
+                    <td>Male</td>
+                </tr>
+                <tr>
+                	<td>Detail :</td>
+                    <td>Female</td>
+                    <td>Male</td>
+                </tr>
+                <tr>
+                	<td></td>
+                    <td>Female</td>
+                    <td>Male</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="col-md-12 pt-2 text-center">
+     <a href="<?php echo base_url('patient/profile')?>">
+     <button type="button" name="button" id="new"   value="New" class="btn btn-xs green  pt-2 pb-2" style="width:120px"  ><i class="fa fa-plus" style="font-size:24px"></i><br /><strong>New</strong></button> 
+     </a>
+     <button type="submit" name="button" id="save"   value="Save" class="btn btn-xs blue  pt-2 pb-2" style="width:120px"  ><i class="fa fa-floppy-o" style="font-size:24px"></i><br /><strong>Save</strong></span></button> 
+     <button type="submit" name="button" id="send"   value="Send" class="btn btn-xs yellow  pt-2 pb-2" style="width:120px"  ><i class="fa fa-share-square-o" style="font-size:24px"></i><br /><strong>Send VN</strong></button> 
+    </div>
+</div>
+<!-- Send VN -->
+<input type="hidden" name="id_hn" id="id_hn" value="<?=$patient['id_hn']?>"  />
+	<!-- Female Data -->
+    <div class="col-12 col-md-12 <?=$patient['spouse']<>'' ? 'col-lg-6' : 'col-lg-12'?>">
         <div class="portlet box red">
               <div class="portlet-title">
                 <div class="caption">
@@ -20,14 +61,13 @@
             	</div>
               </div>
         </div>
-        
-      
           <div class="row">
           <div class="col-12 col-lg-4">
            <fieldset style="background-color:#f4f4f4;text-align:center">
                     <div class="fileinput fileinput-new" data-provides="fileinput">
                         <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="max-width:230px; max-height: 170px;">
-                            <? if(!empty($patient["Picture"])){ ?>    
+                            <? if(!empty($patient["Picture"])){ ?>   
+                              <input name="picture" type="hidden" value="<?=$patient["Picture"]?>" /> 
                               <img src="<?=base_url().$patient["Picture"]?>" style="max-width:220px; max-height: 160px;">
                             <? } ?>
                             <i class='fa fa-user' style="font-size:150px; color:#39F"></i>
@@ -56,7 +96,7 @@
                 </div>
                 <div id="take_img" style="display:none">
                         <div id="cam">
-                        	<input type="text" id="name_pic" name="pic" value="<?=$patient["Picture"];?>" style="display:none">
+                        	<input type="text" id="name_pic" name="name_pic" value="<?=$patient["Picture"];?>" style="display:none">
                             <div id="my_camera" style="margin:5px;"></div>
                              <div id="rs_cam" style="margin:3px;"></div>
                             <button type="button" class="btn green-seagreen" onClick="take()"> <i class="fa fa-lg fa-camera"></i> Take </button>
@@ -73,8 +113,8 @@
           	<?php echo view('tools/consent_menu'); ?>
           </div>
           <div class="row">
-              <div class="col-md-12  mx-3 mt-3">
-              <table width="100%" border="1" cellspacing="0" cellpadding="0">
+              <div class="col-md-12  ">
+              <table width="100%"  cellspacing="0" cellpadding="0">
               <tr>
                 <td align="right" class=" pr-2"> <strong class="font-blue"><i class="fab fa-facebook-f"></i> Facebook : </strong>  </td>
                 <td> <input class="mx-auto w-100" name="id_facebook" value="<?=$patient['id_facebook']?>"  type="text" placeholder="" /> </td>
@@ -102,15 +142,7 @@
           </div><!-- Picture -->
           
           <!-- Data -->
-        	<div class="col-12 col-lg-8">
-            <div class="row">
-                <div class="col-md-12 pt-2 text-center">
-                 <a href="<?php echo base_url('patient/profile')?>">
-                 <button type="button" name="button" id="new"   value="New" class="btn btn-xs green  pt-2 pb-2" style="width:120px"  ><i class="fa fa-plus" style="font-size:24px"></i><br /><span class="tr1"><strong>New</strong></span></button> 
-                 </a>
-                 <button type="submit" name="button" id="save"   value="Save" class="btn btn-xs blue  pt-2 pb-2" style="width:120px"  ><i class="fa fa-floppy-o" style="font-size:24px"></i><br /><span class="tr1"><strong>Save</strong></span></button> 
-                </div>
-            </div>
+    <div class="col-12 col-lg-8">
     <div class="row">
         <div class="col-md-12">
             <h1 class="text-center">Registration </h1><br>
@@ -119,7 +151,12 @@
                 <tbody>
                     <tr>
                       <td width="60" align="right"  ><strong> CN: </strong></td>
-                      <td colspan="3" ><input  class="mx-auto text-center" name="HN"  type="text" value="<?=$patient['HN']?>" placeholder="" /></td>
+                      <td ><input  class="mx-auto text-center" name="HN" disabled  type="text" value="<?=$patient['HN']?>" placeholder="" /></td>
+                      <td align="right" ><strong>Patient Type:</strong></td>
+                      <td >
+                      <select name="PatientType" id="PatientType"  class="form-select mx-auto">
+                      </select>
+                      </td>
                     </tr>
                     <tr>
                       <td align="right"  ><strong>Date Regis: </strong></td>
@@ -127,7 +164,7 @@
                     </tr>
                     <tr>
                       <td align="right"  ><strong>VN: </strong></td>
-                      <td colspan="3" ><input  class="mx-auto text-center" name="vn" type="text" placeholder="" /></td>
+                      <td colspan="3" ><input  class="mx-auto text-center" disabled name="vn" type="text" placeholder="" /></td>
                     </tr>
                     <tr>
                       <td align="right"   ><strong>Name EN:</strong></td>
@@ -192,14 +229,14 @@
 						  		<option <?=$patient['Mday'] == str_pad($i, 2, "0", STR_PAD_LEFT) ? 'selected=selected' : ''; ?> value="<?=str_pad($i, 2, "0", STR_PAD_LEFT)?>"><?=$monthName?></option>
                           <? } ?>
                       </select>
-                        <select name="Yday"  class="form-select mx-auto">
+                        <select name="Yday" onchange="$('#age').val(new Date().getFullYear()-this.value)"  class="form-select mx-auto">
                           
                            <? for($i=date('Y')-100;$i<date('Y');$i++){ ?>
                            <option <?=$patient['Yday'] == str_pad($i, 4, "0", STR_PAD_LEFT) ? 'selected=selected' : '' ; ?> value="<?=str_pad($i, 4, "0", STR_PAD_LEFT)?>"><?=str_pad($i, 4, "0", STR_PAD_LEFT)?></option>
                            <? } ?>
 
                       </select> <span class="mx-2"><strong>Age :</strong></span>  
-                      <input  class="mx-auto text-center" disabled type="text" value="<?=(date('Y')-$patient['Yday'])?>"  size="5" placeholder="" /></td>
+                      <input  class="mx-auto text-center" id="age" disabled type="text" value="<?=$patient['Yday']<>'' ? (date('Y')-$patient['Yday']) : '';?>"  size="5" placeholder="" /></td>
                     </tr>
                     <tr>
                       <td align="right"><strong>Telephone:</strong></td>
@@ -215,10 +252,10 @@
                     </tr>
                     <tr>
                       <td align="right"><strong>District:</strong></td>
-                      <td width="155" >
+                      <td width="144" >
                       <input name="district"  class="uk-input " autocomplete="off" size="15" value="<?=$patient['district']?>" type="text" placeholder="" /></td>
-                      <td width="63" align="right" ><strong>Sub-district :</strong></td>
-                      <td width="170" ><input name="sub_district"   class="uk-input  uk-width-1-1" autocomplete="off" value="<?=$patient['sub_district']?>" size="15" type="text" placeholder="" /></td>
+                      <td width="122" align="right" ><strong>Sub-district :</strong></td>
+                      <td width="128" ><input name="sub_district"   class="uk-input  uk-width-1-1" autocomplete="off" value="<?=$patient['sub_district']?>" size="15" type="text" placeholder="" /></td>
                     </tr>
                     <tr>
                       <td align="right"><strong>Province:</strong></td>
@@ -231,6 +268,14 @@
                       <td colspan="3" >
                       <textarea name="Note" id="Note" class="w-100 text-danger" rows="5"><?=$patient['Note']?></textarea></td>
                   </tr>
+                  <tr>
+                      <td align="right" valign="top"><strong>Underlying Disease:</strong></td>
+                      <td colspan="3" ><textarea name="underlying" id="underlying"  class="w-100 text-danger"   rows="3"><?=$patient['underlying']?></textarea></td>
+                    </tr>
+                     <tr>
+                      <td align="right" valign="top"><strong>Drug Allergy:</strong></td>
+                      <td colspan="3" ><textarea name="drug_allergy" id="drug_allergy"  class="w-100 text-danger"   rows="3"><?=$patient['drug_allergy']?></textarea></td>
+                    </tr>
                 </tbody>
             </table>
             </div>
@@ -239,40 +284,11 @@
             </div>
             <!-- Data -->
         </div>
-        
-        
-        
-    </div>
+	</div>
+    
     <!-- Female Data -->
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <?php /*?>
-    
-    <!-- Male Data -->
-    <div class="col-12 col-md-12 col-lg-6">
-        <div class="portlet box blue">
-            <div class="portlet-title">
-                    <div class="caption">
-            			<i class="fa fa-lg fa-user" style="f"></i> <span class="tr2"><strong>Spouse</strong></span>
-                    </div>
-          </div>
-        </div>
-    </div>
-    <!-- Male Data --><?php */?>
-    
 
-</div>
+
 </form>
 <script type="text/javascript" src="<?php echo base_url('plugins/webcam/webcam.js')?>"></script>
 <script>
@@ -321,12 +337,12 @@ function IDCardOpenScanner(){
 	function Check_Img() {
         if ($('#up_img').css('display') != 'none') {
             var img = $('#select_file img').attr('src');
+			$('#name_pic').val(img);
         } else if ($('#take_img').css('display') != 'none') {
             var img = $('#rs_cam img').attr('src');
-        } else {
-			var img = $('#name_pic').val();
+			$('#name_pic').val(img);
         }
-        $('#name_pic').val(img);
+        
 	}
 </script>
 <script src="<?php echo base_url("plugins/js/jquery-1.11.3.min.js");?>"></script>
@@ -426,5 +442,22 @@ $(document).ready(function(){
 	 	 $('#Pname').find('option').remove().end().append(result).val('<?=$patient['Pname']?>');
 	   }
   });
+  
+  $.ajax({
+	 type: 'POST',
+	 url: '<?php echo  base_url() ?>/Patient/DataArray',
+	 dataType: 'json',
+	 data: {
+	 	table: 'tb_group_patient',
+		field: 'name',
+		name: 'name',
+	 },
+	 cache: false,
+	 success: function (result) {
+	 	 $('#PatientType').find('option').remove().end().append(result).val('<?=$patient['PatientType']?>');
+	   }
+  });
+  
+  
 });
 </script>

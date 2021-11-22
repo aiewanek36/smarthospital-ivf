@@ -25,7 +25,7 @@ class DataModel extends Model
         }
 
         if(($sr['order']<>'')&&($sr['by']<>'')){
-            $bulider->order_by($sr['order'],$sr['by']);
+            $bulider->orderBy($sr['order'],$sr['by']);
         }      
          
          $query = $bulider->get();
@@ -56,9 +56,9 @@ class DataModel extends Model
     {
         $db = db_connect();
         $builder = $db->table($table); 
-        $sql = $builder->set($data)->getCompiledInsert('mytable');
+        // $sql = $builder->set($data)->getCompiledInsert('mytable');
         $builder->insert($data);
-        $id = $builder->getInsertID();
+        $id = $db->insertID();
         return $id;
     }
 

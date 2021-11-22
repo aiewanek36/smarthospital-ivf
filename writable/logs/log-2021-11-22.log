@@ -488,3 +488,18 @@ CRITICAL - 2021-11-22 01:38:19 --> Call to undefined function App\Controllers\vi
 #3 C:\xampp\htdocs\smarthospital-ivf\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #4 C:\xampp\htdocs\smarthospital-ivf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
 #5 {main}
+CRITICAL - 2021-11-22 12:07:44 --> Call to undefined function App\Controllers\sprint()
+#0 /Applications/XAMPP/xamppfiles/htdocs/smarthospital-ivf/smarthospital-ivf/system/CodeIgniter.php(826): App\Controllers\Patient->add()
+#1 /Applications/XAMPP/xamppfiles/htdocs/smarthospital-ivf/smarthospital-ivf/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 /Applications/XAMPP/xamppfiles/htdocs/smarthospital-ivf/smarthospital-ivf/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/XAMPP/xamppfiles/htdocs/smarthospital-ivf/smarthospital-ivf/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Applications/XAMPP/xamppfiles/htdocs/smarthospital-ivf/smarthospital-ivf/system/Commands/Server/rewrite.php(43): require_once('/Applications/X...')
+#5 {main}
+CRITICAL - 2021-11-22 12:35:47 --> Too few arguments to function CodeIgniter\HTTP\RedirectResponse::to(), 0 passed in /Applications/XAMPP/xamppfiles/htdocs/smarthospital-ivf/smarthospital-ivf/app/Controllers/patient.php on line 184 and at least 1 expected
+#0 /Applications/XAMPP/xamppfiles/htdocs/smarthospital-ivf/smarthospital-ivf/app/Controllers/patient.php(184): CodeIgniter\HTTP\RedirectResponse->to()
+#1 /Applications/XAMPP/xamppfiles/htdocs/smarthospital-ivf/smarthospital-ivf/system/CodeIgniter.php(826): App\Controllers\Patient->add()
+#2 /Applications/XAMPP/xamppfiles/htdocs/smarthospital-ivf/smarthospital-ivf/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#3 /Applications/XAMPP/xamppfiles/htdocs/smarthospital-ivf/smarthospital-ivf/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/smarthospital-ivf/smarthospital-ivf/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Applications/XAMPP/xamppfiles/htdocs/smarthospital-ivf/smarthospital-ivf/system/Commands/Server/rewrite.php(43): require_once('/Applications/X...')
+#6 {main}

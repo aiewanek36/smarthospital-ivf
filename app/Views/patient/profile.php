@@ -39,13 +39,13 @@
      <button type="submit" name="button" id="save"   value="Save" class="btn btn-xs blue  pt-2 pb-2" style="width:120px"  ><i class="fa fa-floppy-o" style="font-size:24px"></i><br /><strong>Save</strong></span></button> 
      
      <a href="#divSend" id="SendForm">
-          <button type="button" name="button" id="Send"   value="Send" class="btn btn-xs yellow fancybox pt-2 pb-2" style="width:120px"  ><i class="fa fa-share-square-o" style="font-size:24px"></i><br /><strong>Send VN</strong></button> 
-
-     </a>
+          <button type="button" name="button" id="Send"  value="Send" class="btn btn-xs yellow fancybox pt-2 pb-2" style="width:120px"  ><i class="fa fa-share-square-o" style="font-size:24px"></i><br /><strong>Send VN</strong></button> 
+          <button type="submit" name="button" id="send_btn"   value="Send" style="display:none">
+        </a>
     </div>
 </div>
 
-
+<div id="divSend2" style="display:none"></div>
 <div id="divSend" style="display:none">
   		 <div class="table-responsive">
             <table class="table table-user-information justify-content-center" >
@@ -62,8 +62,8 @@
                 </tr>
                 <tr>
                   <td align="right"><strong>Doctor Visit:</strong></td>
-                  <td align="center" bgcolor="#FFFFFF"><select  id="doctor_f"  class="form-select mx-auto w-100"></select></td>
-                  <td align="center" bgcolor="#FFFFFF"><select  id="doctor_m"  class="form-select mx-auto w-100"></select></td>
+                  <td align="center" bgcolor="#FFFFFF"><select  id="doctor_f" name="doctor_f"  class="form-select mx-auto w-100"></select></td>
+                  <td align="center" bgcolor="#FFFFFF"><select  id="doctor_m" name="doctor_m"   class="form-select mx-auto w-100"></select></td>
                 </tr>
                 <tr>
                   <td align="right"><strong>Detail</strong></td>
@@ -78,11 +78,9 @@
             </tbody>
             </table>
          </div>
-         <div class="row">
+         
          <div class="col-md-12 text-center">
-                   <button type="button" name="button" id="Send"   value="Send" class="btn btn-xs yellow fancybox pt-2 pb-2" style="width:120px"  ><i class="fa fa-share-square-o" style="font-size:24px"></i><br /><strong>Send VN</strong></button> 
-
-         </div>
+                   <button type="submit" name="button" id="Send"  onclick="send_vn();"   value="Send" class="btn btn-xs yellow  pt-2 pb-2" style="width:120px"  ><i class="fa fa-share-square-o" style="font-size:24px"></i><br /><strong>Send VN</strong></button> 
          </div>
 </div>
 
@@ -90,6 +88,8 @@
 
 <!-- Send VN -->
 <input type="hidden" name="id_hn" id="id_hn" value="<?=$patient['id_hn']?>"  />
+<input type="hidden" name="spouse" id="spouse" value="<?=$patient['spouse']?>"  />
+
 	<!-- Female Data -->
     <div class="col-12 col-md-12 <?=$patient['spouse']<>'' ? 'col-lg-6' : 'col-lg-12'?>">
         <div class="portlet box red">
@@ -530,7 +530,6 @@ $(document).ready(function(){
 	 success: function (result) {
 	 	 $('#doctor_f').find('option').remove().end().append(result).val('<?=$patient['doctor']?>');
 		 $('#doctor_m').find('option').remove().end().append(result).val('<?=$patient['doctor']?>');
-
 	  }
   });
   
@@ -545,7 +544,7 @@ $(document).ready(function(){
 			nextEffect: 'fade',
 			fitToView: false, // images won't be scaled to fit to browser's height
 			maxWidth: "90%", // images won't exceed the browser's width
-			minWidth: "60%" // images won't exceed the browser's width
+			minWidth: "60%", // images won't exceed the browser's width
 		});
   });
   
@@ -562,13 +561,20 @@ $(document).ready(function(){
 	  var sex = a.value;
 	  if(a.checked == true){
 		  $('#select_'+sex).css('background-color','#FFF').prop('disabled', false);
-	  	  $('#detail_'+sex).css('background-color','#FFF').prop('readonly', false);
+	  	$('#detail_'+sex).css('background-color','#FFF').prop('readonly', false);
 		  $('#doctor_'+sex).css('background-color','#FFF').prop('readonly', false);
 	  }else{
 		  $('#select_'+sex).css('background-color','#CCC').prop('disabled', true);
 		  $('#detail_'+sex).css('background-color','#CCC').prop('readonly', true);
 		  $('#doctor_'+sex).css('background-color','#CCC').prop('readonly', true);
 	  }
+  }
+
+
+  function send_vn(){
+    parent.$('#divSend2').html($('#divSend'));
+    $('#divSend2').css('display','none');
+    $('#send_btn').trigger('click');
   }
   
 </script>

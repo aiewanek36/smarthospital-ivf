@@ -40,15 +40,6 @@ class DataModel extends Model
         if(!empty($sr['where'])){
             $bulider->where($sr['where']);
         }
-        
-        if(empty($sr['name'])){
-            $sr["name"] = $sr["field"];
-        }else{
-            $sr["name"] = $sr["name"];
-        }
-
-        
-
 
         $query = $bulider->get();
         $results = $query->getResultArray();
@@ -56,8 +47,9 @@ class DataModel extends Model
         $data = array();
         $data[] = '<option value="">Select</option>';
         foreach($results as $row){
+            $id = $row[$sr['field']];
             if(!empty($sr['func'])){  $row[$sr["name"]] = $sr['func']($row[$sr["name"]]); }
-            $data[] = '<option value="'.$row[$sr["field"]].'">'.$row[$sr["name"]].'</option>';
+            $data[] = '<option  value="'.$id.'">'.$row[$sr["name"]].'</option>';
         }
          return $data;
     }

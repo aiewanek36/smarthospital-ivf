@@ -149,7 +149,40 @@ class Patient extends Controller
          }else{
              $where = array('id_hn =' => $id);
              $Pt->updateData($where,$table,$data);
-             return redirect()->back()->withInput($id); 
+             $button = $this->request->getVar('button');
+             if($button == 'Save'){
+                return redirect()->back()->withInput($id); 
+             }else if($button == 'Send'){
+                $table = 'vn';
+                $id_hn = sprintf("%05d",$this->request->getVar('id_hn'));
+                $spouse = sprintf("%05d",$this->request->getVar('id_spouse'));
+                $VN = $id_hn.$spouse.date('ymdHis');
+                if($this->request->getVar('send_f')=='f'){
+                    $data = [
+                        'id_hn' => $this->request->getVar('id_hn'),
+                        'spouse' => $this->request->getVar('spouse'),
+                        'id_act' => $VN, 
+                        'vn_date_start' => date('Y-m-d H:i:s'),
+                        'id_doctor' => $this->request->getVar('doctor_f'),
+                        'doctor' => getDr($this->request->getVar('doctor_f')),
+                        'detail' => $this->request->getVar('detail_f'),
+                    ];
+                    $id =  $Pt->insertData($table,$data);
+                }
+                if($this->request->getVar('send_m')=='m'){
+                    $data2 = [
+                        'id_hn' => $this->request->getVar('spouse'),
+                        'spouse' => $this->request->getVar('id_hn'),
+                        'id_act' => $VN, 
+                        'vn_date_start' => date('Y-m-d H:i:s'),
+                        'id_doctor' => $this->request->getVar('doctor_m'),
+                        'doctor' => getDr($this->request->getVar('doctor_m')),
+                        'detail' => $this->request->getVar('detail_m'),
+                    ];
+                    $id2 =  $Pt->insertData($table,$data2);
+                }
+                return redirect()->to('patient/view/active'); 
+             }
          }
 
          

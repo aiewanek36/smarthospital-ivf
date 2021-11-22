@@ -397,7 +397,6 @@ $(document).ready(function(){
     });
 
  	$.ajax({
-   //var jsonString = JSON.stringify(array('status =' => 'EN'));
 	 type: 'POST',
 	 url: '<?php echo  base_url() ?>/Patient/DataArray',
 	 dataType: 'json',
@@ -405,13 +404,31 @@ $(document).ready(function(){
 	 	table: 'tb_titlename',
 		field: 'title_name',
 		name: 'title_name',
-    where: 'Stat',
+    where: 'status="EN"',
 	 },
 	 cache: false,
-	 success: function (result) { alert(result);
+	 success: function (result) {
 	 		// $('#Pname').find('option').remove().end().append(result).val('<?=$patient['Pname']?>');
-			// $('#Pname_en').find('option').remove().end().append(result).val('<?=$patient['Pname_en']?>');
+		  $('#Pname_en').find('option').remove().end().append(result).val('<?=$patient['Pname_en']?>');
 	 }
     });
+
+
+    $.ajax({
+	 type: 'POST',
+	 url: '<?php echo  base_url() ?>/Patient/DataArray',
+	 dataType: 'json',
+	 data: {
+	 	table: 'tb_titlename',
+		field: 'title_name',
+		name: 'title_name',
+    where: 'status="TH"',
+	 },
+	 cache: false,
+	 success: function (result) {
+	 	 $('#Pname').find('option').remove().end().append(result).val('<?=$patient['Pname']?>');
+		 //$('#Pname_en').find('option').remove().end().append(result).val('<?=$patient['Pname_en']?>');
+	   }
+  });
 });
 </script>

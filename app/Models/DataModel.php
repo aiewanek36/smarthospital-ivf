@@ -47,7 +47,6 @@ class DataModel extends Model
         $data = array();
         foreach($results as $row){
                $data[] = '<option value="'.$row[$sr["field"]].'">'.$row[$sr["field"]].'</option>';
-
         }
          return $data;
     }

@@ -408,7 +408,6 @@ $(document).ready(function(){
 	 },
 	 cache: false,
 	 success: function (result) {
-	 		// $('#Pname').find('option').remove().end().append(result).val('<?=$patient['Pname']?>');
 		  $('#Pname_en').find('option').remove().end().append(result).val('<?=$patient['Pname_en']?>');
 	 }
     });
@@ -427,7 +426,6 @@ $(document).ready(function(){
 	 cache: false,
 	 success: function (result) {
 	 	 $('#Pname').find('option').remove().end().append(result).val('<?=$patient['Pname']?>');
-		 //$('#Pname_en').find('option').remove().end().append(result).val('<?=$patient['Pname_en']?>');
 	   }
   });
 });

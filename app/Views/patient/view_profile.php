@@ -12,8 +12,8 @@
 </style>
 <? $patient = $spouse[0];  ?>
         <!-- Female Data -->
-        <div class="col-12 col-md-12 col-lg-6">
-            <div class="portlet box blue mx-auto" >
+        <div class="col-12 col-md-12 col-lg-6 " style="background-color:#4b8df8" >
+            <div class="portlet box blue mx-auto"  >
                   <div class="portlet-title">
                     <div class="caption text-light">
                   		<a class="text-light" href="<?=base_url("patient/profile/".$patient['id_hn'])?>"><i class="fa fa-lg fa-user"></i> <strong>Spouse</strong></a>
@@ -35,7 +35,7 @@
                
                 </fieldset>
           </fieldset>
-          
+          <br><br>
           <div class="row">
           	<?php echo view('tools/consent_menu'); ?>
           </div>
@@ -43,7 +43,7 @@
               <div class="col-md-12 mt-2 pt-2">
               <table width="100%" cellspacing="0" cellpadding="0">
               <tr>
-                <td align="right" class=" pr-2  mt-2 pt-2"> <strong class="font-blue"><i class="fab fa-facebook-f"></i> Facebook : </strong>  </td>
+                <td align="right" class=" pr-2  mt-2 pt-2 text-nowrap"> <strong class="font-blue"><i class="fab fa-facebook-f"></i> Facebook : </strong>  </td>
                 <td> <input class="mx-auto w-100" value="<?=$patient['id_facebook']?>"  disabled  type="text" placeholder="" /> </td>
               </tr>
               <tr>
@@ -72,7 +72,7 @@
                     <tr>
                       <td width="60" align="right"  ><strong> CN: </strong></td>
                       <td ><input  class="mx-auto text-center"  disabled  type="text" value="<?=$patient['HN']?>" placeholder="" /></td>
-                      <td align="right" ><strong>Patient Type:</strong></td>
+                      <td align="right" class="text-nowrap"><strong>Patient Type:</strong></td>
                       <td >
                       <input type="text" disabled value="<?=$patient['PatientType']?>" class="mx-auto w-100 text-center">
                       </td>
@@ -116,7 +116,7 @@
                       <input disabled name="Nationality" onchange="$('#Nationality').css('display','')" <?=$patient['Nationality'] != 'Chinese' && $patient['Nationality'] != 'Thai' && $patient['Nationality'] != '' ? 'checked'.$nation_dis='':$nation_dis='none';?> id="Nationality_Oth" type="radio"  value="<?=$patient['Nationality']?>"  />
                        <span class="mx-2">Other</span>
              
-                       <input  class="mx-auto text-center" type="text" disabled value="<?=$patient['Nationality']?>" style="width:200px;display:<?=$nation_dis?>"  placeholder="" />
+                       <input  class="mx-auto text-center" type="text" disabled value="<?=$patient['Nationality']?>" style="width:140px;display:<?=$nation_dis?>"  placeholder="" />
                           
                         </td>
                     </tr>
@@ -154,13 +154,13 @@
                       <td align="right"><strong>District:</strong></td>
                       <td width="144" >
                       <input  disabled size="15" value="<?=$patient['district']?>" type="text" placeholder="" /></td>
-                      <td width="122" align="right" ><strong>Sub-district :</strong></td>
+                      <td width="122" class="text-nowrap" align="right" ><strong>Sub-district :</strong></td>
                       <td width="128" ><input  disabled value="<?=$patient['sub_district']?>" size="15" type="text" placeholder="" /></td>
                     </tr>
                     <tr>
                       <td align="right"><strong>Province:</strong></td>
                       <td ><input    disabled  size="15" type="text" value="<?=$patient['province']?>" placeholder="" /></td>
-                      <td align="right" ><strong>Postal Code :</strong></td>
+                      <td align="right" class="text-nowrap" ><strong>Postal Code :</strong></td>
                       <td ><input  disabled value="<?=$patient['zipcode']?>" type="text" size="10" placeholder="" /></td>
                     </tr>
                     <tr>

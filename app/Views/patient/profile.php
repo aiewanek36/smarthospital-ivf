@@ -1,6 +1,26 @@
 <link rel="stylesheet" type="text/css" href="<?php echo base_url('plugins/jquery.Thailand.js/dist/jquery.Thailand.min.css');?>">
 
 <style>
+@media (max-width: 576px) {
+    html { font-size: 0.7rem; }
+    th { font-size: 1rem; }
+}
+@media (min-width: 768px) {
+    html { font-size: 0.8rem; }
+    th { font-size: 1rem; }
+
+}
+@media (min-width: 992px) {
+    html { font-size: 0.8rem; }
+    th { font-size: 1rem; }
+    strong { font-size: 1rem; }
+    .table-user-information td { font-size: 1rem; }
+    .btn { font-size: 0.7rem; }
+    input[type="text"],select { font-size: 0.9rem; }
+}
+/* @media (min-width: 1200px) {
+    
+} */
 	#my_camera {
 		width: auto !important;
 		height: auto !important;
@@ -19,12 +39,9 @@
   }
   
 </style>
-<? $patient = $patient[0];
-   
-	
-?>
-
-
+<? $patient = $patient[0]; 
+$data['results'] = ['id_hn'=>$patient['id_hn'],'id_act'=>$patient['id_act']]; ?>
+<?php echo view('tools/menubar',$data); ?>
 
 <form  id="add-form" onsubmit="return Check_Img();"  method="post" action="<?=site_url('patient/add');?>">
 <!-- Send VN -->
@@ -91,7 +108,7 @@
 <input type="hidden" name="spouse" id="spouse" value="<?=$patient['spouse']?>"  />
 
 	<!-- Female Data -->
-    <div class="col-12 col-md-12 <?=$patient['spouse']<>'' ? 'col-lg-6' : 'col-lg-12'?>">
+    <div style="background-color:#e26a6a" class="col-12 col-md-12  <?=$patient['spouse']<>'' ? 'col-lg-6' : 'col-lg-12'?>">
         <div class="portlet box red">
               <div class="portlet-title">
                 <div class="caption">
@@ -99,7 +116,7 @@
             	</div>
               </div>
         </div>
-          <div class="row">
+          <div class="row bg-light">
           <div class="col-12 col-lg-4">
            <fieldset style="background-color:#f4f4f4;text-align:center">
                     <div class="fileinput fileinput-new" data-provides="fileinput">
@@ -151,10 +168,10 @@
           	<?php echo view('tools/consent_menu'); ?>
           </div>
           <div class="row">
-              <div class="col-md-12  ">
+              <div class="col-md-12 pt-2 ">
               <table width="100%"  cellspacing="0" cellpadding="0">
               <tr>
-                <td align="right" class=" pr-2"> <strong class="font-blue"><i class="fab fa-facebook-f"></i> Facebook : </strong>  </td>
+                <td align="right" class=" pr-2 text-nowrap"> <strong class="font-blue"><i class="fab fa-facebook-f"></i> Facebook : </strong>  </td>
                 <td> <input class="mx-auto w-100" name="id_facebook" value="<?=$patient['id_facebook']?>"  type="text" placeholder="" /> </td>
               </tr>
               <tr>
@@ -180,9 +197,9 @@
           </div><!-- Picture -->
           
           <!-- Data -->
-    <div class="col-12 col-lg-8">
+    <div class="col-12 col-lg-8 ">
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12 nopadding">
             <h1 class="text-center">Registration </h1><br>
             <div class="table-responsive">
             <table class="table table-user-information justify-content-center" >
@@ -206,15 +223,15 @@
                     </tr>
                     <tr>
                       <td align="right"   ><strong>Name EN:</strong></td>
-                      <td colspan="3" > <select name="Pname_en" id="Pname_en"  class="form-select mx-auto">
+                      <td colspan="3" > <select name="Pname_en" id="Pname_en" style="max-width:60px"  class="form-select mx-auto">
                               
                           </select>                       
-                          <input class="mx-auto" value="<?=$patient['Fname_en']?>" name="Fname_en"   type="text" placeholder="" /> 
+                          <input class="mx-auto" value="<?=$patient['Fname_en']?>"  name="Fname_en"   type="text" placeholder="" /> 
                            <input  class="mx-auto" type="text" value="<?=$patient['Lname_en']?>"  name="Lname_en" placeholder="" /></td>
                     </tr>
                     <tr>
                       <td align="right"><strong>Name TH:</strong></td>
-                      <td colspan="3" ><select name="Pname" id="Pname" class="form-select mx-auto">
+                      <td colspan="3" ><select name="Pname" id="Pname" style="max-width:60px"  class="form-select mx-auto">
                         
                       </select>
                       <input class="mx-auto" name="Fname"  type="text" value="<?=$patient['Fname']?>"  placeholder="" />
@@ -239,7 +256,7 @@
                       <input name="Nationality" <?=$patient['Nationality'] == 'Chinese' ? 'checked':'';?> type="radio" id="radio" value="Chinese" onchange="$('#Nationality_Oth').val(this.value)"  /><span class="mx-2">Chinese</span>
                       <input name="Nationality" onchange="$('#Nationality').css('display','')" <?=$patient['Nationality'] != 'Chinese' && $patient['Nationality'] != 'Thai' && $patient['Nationality'] != '' ? 'checked'.$nation_dis='':$nation_dis='none';?> id="Nationality_Oth" type="radio"  value="<?=$patient['Nationality']?>"  />
                        <span class="mx-2">Other</span>
-                     <select class="form-select mx-auto" id="Nationality" onchange="$('#Nationality_Oth').val(this.value)" style="width:200px;display:<?=$nation_dis?>"  >
+                     <select class="form-select mx-auto" id="Nationality" onchange="$('#Nationality_Oth').val(this.value)" style="width:140px;display:<?=$nation_dis?>"  >
                      </select>
                        
                           
@@ -293,12 +310,12 @@
                       <td width="144" >
                       <input name="district"  class="uk-input " autocomplete="off" size="15" value="<?=$patient['district']?>" type="text" placeholder="" /></td>
                       <td width="122" align="right" ><strong>Sub-district :</strong></td>
-                      <td width="128" ><input name="sub_district"   class="uk-input  uk-width-1-1" autocomplete="off" value="<?=$patient['sub_district']?>" size="15" type="text" placeholder="" /></td>
+                      <td width="128" class="text-nowrap"><input name="sub_district"   class="uk-input  uk-width-1-1" autocomplete="off" value="<?=$patient['sub_district']?>" size="15" type="text" placeholder="" /></td>
                     </tr>
                     <tr>
                       <td align="right"><strong>Province:</strong></td>
                       <td ><input   name="province"  class="uk-input  uk-width-1-1" autocomplete="off" size="15" type="text" value="<?=$patient['province']?>" placeholder="" /></td>
-                      <td align="right" ><strong>Postal Code :</strong></td>
+                      <td align="right" class="text-nowrap"><strong>Postal Code :</strong></td>
                       <td ><input name="zipcode"  class="uk-input  uk-width-1-1" autocomplete="off" value="<?=$patient['zipcode']?>" type="text" size="10" placeholder="" /></td>
                     </tr>
                     <tr>

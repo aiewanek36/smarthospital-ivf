@@ -7,7 +7,7 @@ use App\Models\DataModel;
 
 class Patient extends Controller
 { 
-    protected $helpers = ['dataConvert','generate','form','html'];
+    protected $helpers = ['dataConvert','generate','form','date','html'];
     
 
     public function index($page = 'all'){
@@ -51,8 +51,9 @@ class Patient extends Controller
         if($page=='all'){
             $sr['table'] = 'tb_patient';
         }else if($page=='active'){
-            $sr['table'] = 'vn';
-            $sr['join']['tb_patient'] = 'vn.id_hn = tb_patient.id_hn';
+            $sr['table'] = 'vn as a';
+            $sr['join']['tb_patient as b'] = 'a.id_hn = b.id_hn';
+            $sr['field'] = 'a.*,b.HN,b.PatientType,b.status_room';
         }
         $data['goto'] = 1;
         $data['results'] = $Pt->selectAll($sr);
@@ -76,6 +77,10 @@ class Patient extends Controller
         $sr['table'] = 'tb_patient';
         $sr['where'] = array('id_hn =' => $id);
         $data['patient'] = $Pt->selectAll($sr);
+
+
+
+
         echo view('patient/profile', $data);
 
         if($data['patient'][0]['spouse'] <> ''){
@@ -148,19 +153,21 @@ class Patient extends Controller
             $id =  $Pt->insertData($table,$data);
             return redirect()->to(site_url('patient/profile/'.$id)); 
          }else{
-             $where = array('id_hn =' => $id);
-             $Pt->updateData($where,$table,$data);
-             $button = $this->request->getVar('button');
+            $where = array('id_hn =' => $id);
+            $Pt->updateData($where,$table,$data);
+            $button = $this->request->getVar('button');
+            
              if($button == 'Save'){
-                return redirect()->back()->withInput($id); 
+                $link = redirect()->back()->withInput($id); 
              }else if($button == 'Send'){
-                $table = 'vn';
+                $table_vn = 'vn';
                 $vn_per_day = genVN();
                 $id_hn = sprintf("%05d",$this->request->getVar('id_hn'));
                 $spouse = sprintf("%05d",$this->request->getVar('id_spouse'));
                 $VN = $id_hn.$spouse.date('ymdHis');
+                
                 if($this->request->getVar('send_f')=='f'){
-                    $data = [
+                    $data_vn = [
                         'id_hn' => $this->request->getVar('id_hn'),
                         'spouse' => $this->request->getVar('spouse'),
                         'id_act' => $VN, 
@@ -170,10 +177,17 @@ class Patient extends Controller
                         'doctor' => getDr($this->request->getVar('doctor_f')),
                         'detail' => $this->request->getVar('detail_f'),
                     ];
-                    $id =  $Pt->insertData($table,$data);
+                    $id =  $Pt->insertData($table_vn,$data_vn);
+                    $where = array('id_hn =' => $this->request->getVar('id_hn'));
+                    $data = [
+                        'id_active' => $VN, 
+                        'status_room' => 'Nurse',
+                    ];
+                    $Pt->updateData($where,$table,$data);
+                    
                 }
                 if($this->request->getVar('send_m')=='m'){
-                    $data2 = [
+                    $data_vn2 = [
                         'id_hn' => $this->request->getVar('spouse'),
                         'spouse' => $this->request->getVar('id_hn'),
                         'id_act' => $VN, 
@@ -183,13 +197,19 @@ class Patient extends Controller
                         'doctor' => getDr($this->request->getVar('doctor_m')),
                         'detail' => $this->request->getVar('detail_m'),
                     ];
-                    $id2 =  $Pt->insertData($table,$data2);
+                    $id2 =  $Pt->insertData($table_vn,$data_vn2);
+                    $where = array('id_hn =' => $this->request->getVar('spouse'));
+                    $data = [
+                        'id_active' => $VN, 
+                        'status_room' => 'Nurse',
+                    ];
+                    $Pt->updateData($where,$table,$data);
                 }
-                return redirect()->to('patient/view/active'); 
+                $link = redirect()->to('patient/view/active'); 
              }
-         }
 
-         
+             return $link;
+         }
        
     }
 

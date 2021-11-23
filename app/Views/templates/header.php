@@ -21,6 +21,10 @@
 body {
   font-family: Sarabun;
 }
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
 </style>
 <html lang="en">
 <head>

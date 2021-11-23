@@ -10,7 +10,7 @@
     background: #dddddd;
   }
 </style>
-<? $patient = $spouse[0];  ?>
+<? $patient = $spouse[0]; ?>
         <!-- Female Data -->
         <div class="col-12 col-md-12 col-lg-6 " style="background-color:#4b8df8" >
             <div class="portlet box blue mx-auto"  >
@@ -79,11 +79,14 @@
                     </tr>
                     <tr>
                       <td align="right"  ><strong>Date Regis: </strong></td>
-                      <td colspan="3" ><input  class="mx-auto text-center" name="DateIn" disabled="disabled"  type="text" value="<?=$patient['DateIn'];?>" placeholder="" /></td>
+                      <td ><input  class="mx-auto text-center" name="DateIn" disabled  type="text" value="<?=$patient['DateIn']!='' ? $patient['DateIn']:date('Y-m-d');?>" placeholder="" /></td>
+                      <td align="right"  ><strong>VN: </strong></td>
+                      <td  ><input  class="mx-auto text-center bg-info" style="width:80%" disabled name="vn" type="text" value="<?=$patient['vn_per_day']?>" placeholder="" /></td>
+
                     </tr>
                     <tr>
-                      <td align="right"  ><strong>VN: </strong></td>
-                      <td colspan="3" ><input  class="mx-auto text-center" disabled name="vn" type="text" placeholder="" /></td>
+                      <td align="right"  ><strong>Physician: </strong></td>
+                      <td colspan="2" ><input  class="mx-auto w-100 text-center"  disabled  type="text" value="<?=getDr($patient['doctor'])?>"  placeholder="" />  </td>
                     </tr>
                     <tr>
                       <td align="right"   ><strong>Name EN:</strong></td>

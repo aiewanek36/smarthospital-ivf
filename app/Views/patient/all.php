@@ -28,7 +28,7 @@
 <? foreach ($results as $row){ $link = base_url('patient/profile/'.$row['id_hn']); ?>
 <tr>
 <td class="text-center bg-light" ><a href="<?=$link?>"><?=$no++;?></a></td>
-<td class="text-center bg-light"><a href="<?=$link?>"><?=$row['DateIn']?></a></td>
+<td class="text-center bg-light"><a href="<?=$link?>"><?=date("d-m-Y", strtotime($row['DateIn']))?></a></td>
 <td class="text-center bg-light"><a href="<?=$link?>"><?=$row['HN']?></a></td>
 <td class="text-center bg-light"><a href="<?=$link?>"><?php echo getName($row['id_hn']); ?></a></td>
 <td class="text-center bg-light"><a href="<?=$link?>"><?=$row['PersonalID']?></a></td>

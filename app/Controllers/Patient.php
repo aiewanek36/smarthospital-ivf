@@ -74,8 +74,10 @@ class Patient extends Controller
         echo view('templates/header', $data);
         echo view('templates/nav_bar', $data);
         $Pt = new DataModel();
-        $sr['table'] = 'tb_patient';
-        $sr['where'] = array('id_hn =' => $id);
+        $sr['table'] = 'tb_patient as a';
+        $sr['join']['vn as b'] = 'a.id_hn = b.id_hn';
+        $sr['field'] = 'a.*,b.vn_per_day';
+        $sr['where'] = array('a.id_hn =' => $id);
         $data['patient'] = $Pt->selectAll($sr);
 
 
@@ -84,8 +86,10 @@ class Patient extends Controller
         echo view('patient/profile', $data);
 
         if($data['patient'][0]['spouse'] <> ''){
-            $sr2['table'] = 'tb_patient';
-            $sr2['where'] = array('id_hn =' => $data['patient'][0]['spouse']);
+            $sr2['table'] = 'tb_patient as a';
+            $sr2['join']['vn as b'] = 'a.id_hn = b.id_hn';
+            $sr2['field'] = 'a.*,b.vn_per_day';
+            $sr2['where'] = array('a.id_hn =' => $data['patient'][0]['spouse']);
             $data2['spouse'] = $Pt->selectAll($sr2);
             echo view('patient/view_profile', $data2);
         }
@@ -118,6 +122,7 @@ class Patient extends Controller
             'id_facebook' => $this->request->getVar('id_facebook'),
             'id_wechat' => $this->request->getVar('id_wechat'),
             'id_line' => $this->request->getVar('id_line'),
+            'doctor' => $this->request->getVar('doctor'),
             'Pname_en' => $this->request->getVar('Pname_en'),
             'Fname_en' => $this->request->getVar('Fname_en'),
             'Lname_en' => $this->request->getVar('Lname_en'),

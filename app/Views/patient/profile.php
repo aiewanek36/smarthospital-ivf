@@ -215,11 +215,14 @@ $data['results'] = ['id_hn'=>$patient['id_hn'],'id_act'=>$patient['id_act']]; ?>
                     </tr>
                     <tr>
                       <td align="right"  ><strong>Date Regis: </strong></td>
-                      <td colspan="3" ><input  class="mx-auto text-center" name="DateIn"  type="text" value="<?=$patient['DateIn']!='' ? $patient['DateIn']:date('Y-m-d');?>" placeholder="" /></td>
+                      <td ><input  class="mx-auto text-center" name="DateIn"  type="text" value="<?=$patient['DateIn']!='' ? $patient['DateIn']:date('Y-m-d');?>" placeholder="" /></td>
+                      <td align="right"  ><strong>VN: </strong></td>
+                      <td  ><input  class="mx-auto text-center bg-info" style="width:80%" disabled name="vn" type="text" value="<?=$patient['vn_per_day']?>" placeholder="" /></td>
+
                     </tr>
                     <tr>
-                      <td align="right"  ><strong>VN: </strong></td>
-                      <td colspan="3" ><input  class="mx-auto text-center" disabled name="vn" type="text" placeholder="" /></td>
+                      <td align="right"  ><strong>Physician: </strong></td>
+                      <td colspan="2" ><select  id="doctor" name="doctor"  class="form-select mx-auto w-100"></select></td>
                     </tr>
                     <tr>
                       <td align="right"   ><strong>Name EN:</strong></td>
@@ -545,6 +548,7 @@ $(document).ready(function(){
 	 },
 	 cache: true,
 	 success: function (result) {
+     $('#doctor').find('option').remove().end().append(result).val('<?=$patient['doctor']?>');
 	 	 $('#doctor_f').find('option').remove().end().append(result).val('<?=$patient['doctor']?>');
 		 $('#doctor_m').find('option').remove().end().append(result).val('<?=$patient['doctor']?>');
 	  }

@@ -39,8 +39,32 @@ if ( ! function_exists('genHN')){
         }else{ 
             $HN = date('y').'00001'; 
         }
-        
+
         return  $HN;
+    }   
+}
+
+
+
+if ( ! function_exists('genVN')){
+    function genVN(){
+        $Pt = new DataModel();
+        $sr['table'] = 'vn';
+        $sr['order'] = 'id';
+        $sr['field'] = 'vn_per_day';
+        $sr['where'] = 'vn_per_day LIKE "'.date('ymd').'-%"';
+        $sr['by'] = 'DESC';
+        $sr['start'] = '0';
+        $sr['limit'] = '1';
+        $data = $Pt->selectAll($sr);
+        $VN = $data[0]['vn_per_day'];
+        if($VN<>'') {
+            $num = substr($VN,-3,3);
+            $VN  = date('ymd').'-'.sprintf('%03d',(int)$num+1);
+        }else{ 
+            $VN = date('ymd').'-001'; 
+        }
+        return $VN;
     }   
 }
 

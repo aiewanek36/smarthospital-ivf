@@ -24,12 +24,20 @@ class DataModel extends Model
             $bulider->limit($sr['limit'], $sr['start']);
         }
 
+        if(!empty($sr['join'])){
+            foreach($sr['join'] as $key => $val){ 
+                $bulider->join($key,$val,'left');
+            }
+        }
+
         if(($sr['order']<>'')&&($sr['by']<>'')){
             $bulider->orderBy($sr['order'],$sr['by']);
         }      
          
          $query = $bulider->get();
          $results = $query->getResultArray();
+         $builder =  $bulider->getCompiledSelect('test');
+        
          return $results;
     }
 

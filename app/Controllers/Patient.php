@@ -43,18 +43,19 @@ class Patient extends Controller
            $data['theme'][$value['type']] = $value; 
         }
         
-        //$page = '/'.current_url(true)->getSegment(2);
+        $page = current_url(true)->getSegment(3);
         $uri = current_url(true);
-        // $uri->getTotalSegments();
-        $module = '/'.current_url(true)->getSegment(1);
         echo view('templates/header', $data);
         echo view('templates/nav_bar', $data);
         $Pt = new DataModel();
-        $sr['table'] = 'tb_patient';
-        if($page == 'all'){
-             $data['goto'] = 1;
-             $data['results'] = $Pt->selectAll($sr);
+        if($page=='all'){
+            $sr['table'] = 'tb_patient';
+        }else if($page=='active'){
+            $sr['table'] = 'vn';
+            $sr['join']['tb_patient'] = 'vn.id_hn = tb_patient.id_hn';
         }
+        $data['goto'] = 1;
+        $data['results'] = $Pt->selectAll($sr);
         echo view('patient/'.$page, $data);
         echo view('templates/footer', $data);
     }
@@ -154,6 +155,7 @@ class Patient extends Controller
                 return redirect()->back()->withInput($id); 
              }else if($button == 'Send'){
                 $table = 'vn';
+                $vn_per_day = genVN();
                 $id_hn = sprintf("%05d",$this->request->getVar('id_hn'));
                 $spouse = sprintf("%05d",$this->request->getVar('id_spouse'));
                 $VN = $id_hn.$spouse.date('ymdHis');
@@ -163,6 +165,7 @@ class Patient extends Controller
                         'spouse' => $this->request->getVar('spouse'),
                         'id_act' => $VN, 
                         'vn_date_start' => date('Y-m-d H:i:s'),
+                        'vn_per_day' => $vn_per_day,
                         'id_doctor' => $this->request->getVar('doctor_f'),
                         'doctor' => getDr($this->request->getVar('doctor_f')),
                         'detail' => $this->request->getVar('detail_f'),
@@ -175,6 +178,7 @@ class Patient extends Controller
                         'spouse' => $this->request->getVar('id_hn'),
                         'id_act' => $VN, 
                         'vn_date_start' => date('Y-m-d H:i:s'),
+                        'vn_per_day' => $vn_per_day,
                         'id_doctor' => $this->request->getVar('doctor_m'),
                         'doctor' => getDr($this->request->getVar('doctor_m')),
                         'detail' => $this->request->getVar('detail_m'),

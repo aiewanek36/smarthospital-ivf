@@ -11,7 +11,6 @@ class DataModel extends Model
         $db = db_connect();
         $bulider = $db->table($sr['table']);
 
-
         if(!empty($sr['field'])){
             $bulider->select($sr['field']);
         }
@@ -36,7 +35,7 @@ class DataModel extends Model
          
          $query = $bulider->get();
          $results = $query->getResultArray();
-         $builder =  $bulider->getCompiledSelect('test');
+         
         
          return $results;
     }

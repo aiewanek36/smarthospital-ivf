@@ -1,4 +1,5 @@
 <link rel="stylesheet" type="text/css" href="<? echo base_url();?>/css/table_fixed.css">
+<form class="" method="post" role="search">
 <div class="row">
   <div class="col-md-3  navbar-form navbar-center" style="margin-left:15px"><a href="<?=base_url()?>/patient/profile">
   <button type="button" name="bt" id="bt"   value="Search" class="btn btn-xs blue" style="width:130px; height:30px">
@@ -44,3 +45,4 @@
 <? } ?>
 </tbody>
 </table>
+</form>

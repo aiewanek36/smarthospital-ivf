@@ -701,3 +701,119 @@ CRITICAL - 2021-11-23 12:18:05 --> Call to a member function getResultArray() on
 #4 /Applications/XAMPP/xamppfiles/htdocs/smarthospital-ivf/smarthospital-ivf/public/index.php(37): CodeIgniter\CodeIgniter->run()
 #5 /Applications/XAMPP/xamppfiles/htdocs/smarthospital-ivf/smarthospital-ivf/system/Commands/Server/rewrite.php(43): require_once('/Applications/X...')
 #6 {main}
+CRITICAL - 2021-11-23 20:05:57 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\smarthospital-ivf\app\Models\DataModel.php(12): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\smarthospital-ivf\app\Controllers\Patient.php(59): App\Models\DataModel->selectAll(NULL)
+#2 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(826): App\Controllers\Patient->view()
+#3 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#4 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\smarthospital-ivf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\smarthospital-ivf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-11-23 20:05:58 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\smarthospital-ivf\app\Models\DataModel.php(12): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\smarthospital-ivf\app\Controllers\Patient.php(59): App\Models\DataModel->selectAll(NULL)
+#2 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(826): App\Controllers\Patient->view()
+#3 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#4 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\smarthospital-ivf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\smarthospital-ivf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-11-23 20:43:17 --> Call to a member function post() on null
+#0 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(826): App\Controllers\Patient->view()
+#1 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\smarthospital-ivf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\smarthospital-ivf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+ERROR - 2021-11-23 20:49:54 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'DATE(DateIn) BETWEEN '2021-11-10'  AND '2021-11-23'' at line 3
+CRITICAL - 2021-11-23 20:49:54 --> Call to a member function getResultArray() on bool
+#0 C:\xampp\htdocs\smarthospital-ivf\app\Controllers\Patient.php(70): App\Models\DataModel->selectAll(Array)
+#1 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(826): App\Controllers\Patient->view()
+#2 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#3 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\smarthospital-ivf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\smarthospital-ivf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2021-11-23 20:50:09 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'DATE(DateIn) BETWEEN '2021-11-10'  AND '2021-11-23'' at line 3
+CRITICAL - 2021-11-23 20:50:09 --> Call to a member function getResultArray() on bool
+#0 C:\xampp\htdocs\smarthospital-ivf\app\Controllers\Patient.php(70): App\Models\DataModel->selectAll(Array)
+#1 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(826): App\Controllers\Patient->view()
+#2 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#3 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\smarthospital-ivf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\smarthospital-ivf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2021-11-23 20:50:19 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'DATE(DateIn) BETWEEN '2021-11-18'  AND '2021-11-23'' at line 3
+CRITICAL - 2021-11-23 20:50:19 --> Call to a member function getResultArray() on bool
+#0 C:\xampp\htdocs\smarthospital-ivf\app\Controllers\Patient.php(70): App\Models\DataModel->selectAll(Array)
+#1 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(826): App\Controllers\Patient->view()
+#2 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#3 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\smarthospital-ivf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\smarthospital-ivf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-11-23 20:52:58 --> Cannot pass parameter 1 by reference
+#0 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(826): App\Controllers\Patient->view()
+#1 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\smarthospital-ivf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\smarthospital-ivf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-23 20:53:08 --> Cannot pass parameter 1 by reference
+#0 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(826): App\Controllers\Patient->view()
+#1 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\smarthospital-ivf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\smarthospital-ivf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-23 20:53:41 --> Cannot pass parameter 1 by reference
+#0 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(826): App\Controllers\Patient->view()
+#1 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\smarthospital-ivf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\smarthospital-ivf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-23 20:54:19 --> Call to undefined function App\Controllers\push()
+#0 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(826): App\Controllers\Patient->view()
+#1 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\smarthospital-ivf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\smarthospital-ivf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-23 20:55:41 --> Cannot pass parameter 1 by reference
+#0 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(826): App\Controllers\Patient->view()
+#1 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#2 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\smarthospital-ivf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\smarthospital-ivf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-23 20:56:18 --> syntax error, unexpected ')'
+#0 C:\xampp\htdocs\smarthospital-ivf\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\smarthospital-ivf\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(791): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\smarthospital-ivf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\smarthospital-ivf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2021-11-23 21:07:25 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' ',Lname_en') LIKE '%กาญ%'' at line 3
+CRITICAL - 2021-11-23 21:07:25 --> Call to a member function getResultArray() on bool
+#0 C:\xampp\htdocs\smarthospital-ivf\app\Controllers\Patient.php(73): App\Models\DataModel->selectAll(Array)
+#1 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(826): App\Controllers\Patient->view()
+#2 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#3 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\smarthospital-ivf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\smarthospital-ivf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2021-11-23 21:08:04 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%แซ่%'' at line 3
+CRITICAL - 2021-11-23 21:08:04 --> Call to a member function getResultArray() on bool
+#0 C:\xampp\htdocs\smarthospital-ivf\app\Controllers\Patient.php(73): App\Models\DataModel->selectAll(Array)
+#1 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(826): App\Controllers\Patient->view()
+#2 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#3 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\smarthospital-ivf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\smarthospital-ivf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}

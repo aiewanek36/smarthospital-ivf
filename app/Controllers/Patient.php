@@ -50,10 +50,34 @@ class Patient extends Controller
         $Pt = new DataModel();
         if($page=='all'){
             $sr['table'] = 'tb_patient';
+            $search = array();
+            $search[] = '1=1';
+            if($this->request->getVar('search_date')<>''){
+                $d1 = $this->request->getVar('d1');
+                $d2 = $this->request->getVar('d2');
+                $search[] = "DATE(DateIn) BETWEEN '".$d1."'  AND '".$d2."'";
+            }
+            if($this->request->getVar('s_text')<>''){
+                $var = $this->request->getVar('s_text');
+                $search[] = "CONCAT(HN,' ',Fname,' ',Fname_en,' ',Lname,' ',Lname_en,' ',Telephone,' ',PersonalID,' ',PassportNumber) LIKE '%$var%'";
+            }
+            $sr['where'] = implode($search,' AND ');
         }else if($page=='active'){
             $sr['table'] = 'vn as a';
             $sr['join']['tb_patient as b'] = 'a.id_hn = b.id_hn';
             $sr['field'] = 'a.*,b.HN,b.PatientType,b.status_room';
+            $search = array();
+            $search[] = '1=1';
+            if($this->request->getVar('search_date')<>''){
+                $d1 = $this->request->getVar('d1');
+                $d2 = $this->request->getVar('d2');
+                $search[] = "DATE(a.vn_date_start) BETWEEN '".$d1."'  AND '".$d2."'";
+            }
+            if($this->request->getVar('s_text')<>''){
+                $var = $this->request->getVar('s_text');
+                $search[] = "CONCAT(b.HN,b.Fname,' ',b.Fname_en,' ',b.Lname,' ',b.Lname_en,' ',b.Telephone,' ',b.PersonalID,' ',b.PassportNumber) LIKE '%$var%'";
+            }
+            $sr['where'] = implode($search,' AND ');
         }
         $data['goto'] = 1;
         $data['results'] = $Pt->selectAll($sr);
@@ -73,15 +97,13 @@ class Patient extends Controller
         $id = $uri->getSegment(3);
         echo view('templates/header', $data);
         echo view('templates/nav_bar', $data);
+        echo $this->request->getVar('d1');
         $Pt = new DataModel();
         $sr['table'] = 'tb_patient as a';
         $sr['join']['vn as b'] = 'a.id_hn = b.id_hn';
         $sr['field'] = 'a.*,b.vn_per_day';
         $sr['where'] = array('a.id_hn =' => $id);
         $data['patient'] = $Pt->selectAll($sr);
-
-
-
 
         echo view('patient/profile', $data);
 

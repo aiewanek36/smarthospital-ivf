@@ -1,4 +1,5 @@
 <link rel="stylesheet" type="text/css" href="<? echo base_url();?>/css/table_fixed.css">
+<form class="" method="post" role="search">
 <div class="row">
   <div class="col-md-3  navbar-form navbar-center" style="margin-left:15px">
   </div>
@@ -37,3 +38,4 @@
 <? } ?>
 </tbody>
 </table>
+</form>

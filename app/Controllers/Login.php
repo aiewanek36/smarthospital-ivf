@@ -6,12 +6,15 @@ use App\Models\UserModel;
 
 
 class Login extends Controller {
+
+	
 	public function index(){
 		helper(['form']);
-		echo view('login');
+		// echo view('login');
+		return view('\App\Views\login.php');
 	}
 
-	public function auth(){
+	public function Auth(){
 		$session = session();
 		$model = new UserModel();
 		$user = $this->request->getVar('usern');
@@ -40,7 +43,7 @@ class Login extends Controller {
 		}
 	}
 
-	public function logout(){
+	public function Logout(){
 		$session = session();
 		$session->destroy();
 		return redirect()->to(base_url().'/login');

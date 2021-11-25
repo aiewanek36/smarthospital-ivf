@@ -20,7 +20,7 @@ if (file_exists(SYSTEMPATH . 'Config/Routes.php')) {
 $routes->setDefaultNamespace('App\Controllers');
 $routes->setDefaultController('Home');
 $routes->setDefaultMethod('index');
-$routes->setTranslateURIDashes(false);
+$routes->setTranslateURIDashes(true);
 $routes->set404Override();
 $routes->setAutoRoute(true);
 
@@ -36,11 +36,11 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Home::index');
 $routes->get('/login', 'Login::index');
 $routes->get('/logout', 'Login::logout');
-$routes->get('/dashboard','Dashboard::index',['filter' => 'auth']);
-$routes->group('patient', ["filter" => "auth"], function($routes) {
-    $routes->get("/", "patient::index");
-    $routes->match(['get','post'],"(:segment)",'patient::$1');
-    $routes->match(['get','post'],"(:segment)/(:any)",'patient::$1');
+$routes->get('/dashboard','Dashboard::index');
+$routes->group('Patient', ["filter" => "auth"], function($routes) {
+    $routes->get("/", "Patient::index");
+    $routes->match(['get','post'],"(:segment)",'Patient::$1');
+    $routes->match(['get','post'],"(:segment)/(:any)",'Patient::$1');
 });
 
 

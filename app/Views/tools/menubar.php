@@ -219,7 +219,8 @@
 
 $id_hn = $results['id_hn'];
 //print_r($results);
-$page = current_url(true)->getSegment(2);
+$router = \Config\Services::router();
+$page = $router->methodName();
 $id_act = $patient['id_act'];
 $Normaltab = 'class=""';
 $CurrentActive2 = 'class="active-link"';
@@ -239,7 +240,7 @@ if($page=="appointment_manage.php"){$MakeApp = $CurrentActive2;}else{$MakeApp = 
 
 $Reg = '<li ><a '.$RegChk.' href="'.site_url('patient/profile/'.$id_hn).'"><span class="fa fa-user"></span> Registration</a></li>';
 $NurNo = '<li ><a '.$NurNoChk.' href="?menu=opd_room.php&id_hn='.$id_hn.'&id_act='.$id_act.'"><span class="fa fa-pencil-square-o"></span>Nurse Note</a></li>';
-$Dx = '<li ><a '.$DxChk.' href="?menu=dx_room.php&id_hn='.$id_hn.'&id_act='.$id_act.'"><span class="fa fa-user-md"></span>Pharmacist Room</a></li>';
+$Dx = '<li ><a '.$DxChk.' href="?menu=dx_room.php&id_hn='.$id_hn.'&id_act='.$id_act.'"><span class="fa fa-user-md"></span>Doctor Room</a></li>';
 $Physio = '<li ><a '.$Physio.' href="?menu=phy_room.php&id_hn='.$id_hn.'&id_act='.$id_act.'">Physio</a></li>';
 $Order = '<li ><a '.$OrderChk.' href="?menu=order_tab.php&id_hn='.$id_hn.'&id_act='.$id_act.'">Order PCT</a></li>';
 $Lab = '<li ><a '.$LabChk.' href="?menu=lab_order_rou.php&id_hn='.$id_hn.'&id_act='.$id_act.'">Laboratory</a></li>';

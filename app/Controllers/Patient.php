@@ -1,15 +1,20 @@
 <?php
+
+
 namespace App\Controllers;
 
 use CodeIgniter\Controller;
 use App\Models\ThemeModel;
 use App\Models\DataModel;
 
+define('BASEPATH', str_replace("\\", "/", $system_path)) OR exit('No direct script access allowed');
+error_reporting(1);
 class Patient extends Controller
 { 
     protected $helpers = ['dataConvert','generate','form','date','html'];
     
 
+    
     public function index($page = 'all'){
         if (!is_file(APPPATH.'/Views/patient/'.$page.'.php')){
             throw new \CodeIgniter\Exceptions\PageNoteFoundException($page);
@@ -42,32 +47,38 @@ class Patient extends Controller
         foreach($theme as $key => $value){
            $data['theme'][$value['type']] = $value; 
         }
+
+        $router = \Config\Services::router();
+        $_method = 
         
-        $page = current_url(true)->getSegment(3);
-        $uri = current_url(true);
+        $data['_method'] = $router->methodName();
+        $data['_controller'] = current_url(true)->getSegment(3);
+        $data['_params'] = $router->params();
+        // $page = current_url(true)->getSegment(3);
+        // $uri = current_url(true);
         echo view('templates/header', $data);
         echo view('templates/nav_bar', $data);
         $Pt = new DataModel();
         if($page=='all'){
-            $sr['table'] = 'tb_patient';
-            $search = array();
-            $search[] = '1=1';
-            if($this->request->getVar('search_date')<>''){
-                $d1 = $this->request->getVar('d1');
-                $d2 = $this->request->getVar('d2');
-                $search[] = "DATE(DateIn) BETWEEN '".$d1."'  AND '".$d2."'";
-            }
-            if($this->request->getVar('s_text')<>''){
-                $var = $this->request->getVar('s_text');
-                $search[] = "CONCAT(HN,' ',Fname,' ',Fname_en,' ',Lname,' ',Lname_en,' ',Telephone,' ',PersonalID,' ',PassportNumber) LIKE '%$var%'";
-            }
-            $sr['where'] = implode($search,' AND ');
-        }else if($page=='active'){
+             $sr['table'] = 'tb_patient';
+             $search = array();
+             $search[] = '1=1';
+             if($this->request->getVar('search_date')<>''){
+                 $d1 = $this->request->getVar('d1');
+                 $d2 = $this->request->getVar('d2');
+                 $search[] = "DATE(DateIn) BETWEEN '".$d1."'  AND '".$d2."'";
+             }
+             if($this->request->getVar('s_text')<>''){
+                 $var = $this->request->getVar('s_text');
+                 $search[] = "CONCAT(HN,' ',Fname,' ',Fname_en,' ',Lname,' ',Lname_en,' ',Telephone,' ',PersonalID,' ',PassportNumber) LIKE '%$var%'";
+             }
+             $sr['where'] = implode($search,' AND ');
+         }else if($page=='active'){
             $sr['table'] = 'vn as a';
             $sr['join']['tb_patient as b'] = 'a.id_hn = b.id_hn';
             $sr['field'] = 'a.*,b.HN,b.PatientType,b.status_room';
             $search = array();
-            $search[] = '1=1';
+            $search[] = 'b.id_active <> ""';
             if($this->request->getVar('search_date')<>''){
                 $d1 = $this->request->getVar('d1');
                 $d2 = $this->request->getVar('d2');
@@ -78,14 +89,14 @@ class Patient extends Controller
                 $search[] = "CONCAT(b.HN,b.Fname,' ',b.Fname_en,' ',b.Lname,' ',b.Lname_en,' ',b.Telephone,' ',b.PersonalID,' ',b.PassportNumber) LIKE '%$var%'";
             }
             $sr['where'] = implode($search,' AND ');
-        }
-        $data['goto'] = 1;
-        $data['results'] = $Pt->selectAll($sr);
-        echo view('patient/'.$page, $data);
-        echo view('templates/footer', $data);
+         }
+         $data['goto'] = 1;
+         $data['results'] = $Pt->selectAll($sr);
+         echo view('patient/'.$page, $data);
+         echo view('templates/footer', $data);
     }
 
-    public function profile(){
+    public function profile($id=null){
         $session = session();
         
         $model = new ThemeModel();
@@ -93,8 +104,8 @@ class Patient extends Controller
         foreach($theme as $key => $value){
            $data['theme'][$value['type']] = $value; 
         }
+        
         $uri = current_url(true);
-        $id = $uri->getSegment(3);
         echo view('templates/header', $data);
         echo view('templates/nav_bar', $data);
         echo $this->request->getVar('d1');
@@ -104,18 +115,21 @@ class Patient extends Controller
         $sr['field'] = 'a.*,b.vn_per_day';
         $sr['where'] = array('a.id_hn =' => $id);
         $data['patient'] = $Pt->selectAll($sr);
-
-        echo view('patient/profile', $data);
-
+        $spouse = $Pt->getRow('tb_patient',array('id_hn='=>$data['patient'][0]['spouse'],'id_active<>'=>""));
+        
+        $spouse == '0' && $data['patient'][0]['id_active'] <> '' ? $data['patient'][0]['spouse'] = '' : '';
+        // Check Send VN Couple or Single
         if($data['patient'][0]['spouse'] <> ''){
             $sr2['table'] = 'tb_patient as a';
             $sr2['join']['vn as b'] = 'a.id_hn = b.id_hn';
             $sr2['field'] = 'a.*,b.vn_per_day';
             $sr2['where'] = array('a.id_hn =' => $data['patient'][0]['spouse']);
             $data2['spouse'] = $Pt->selectAll($sr2);
-            echo view('patient/view_profile', $data2);
         }
-        
+
+
+        echo view('patient/profile', $data);
+        echo $data2['spouse'][0]['id_hn'] <> '' ? view('patient/view_profile', $data2) : '';
         echo view('templates/footer', $data);
     }
 

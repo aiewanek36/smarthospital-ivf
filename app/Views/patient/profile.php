@@ -39,9 +39,10 @@
   }
   
 </style>
-<? $patient = $patient[0]; 
+<? 
+$patient = $patient[0]; 
 $data['results'] = ['id_hn'=>$patient['id_hn'],'id_act'=>$patient['id_act']]; ?>
-<?php echo view('tools/menubar',$data); ?>
+<?php echo $patient['id_hn'] <> '' ? view('tools/menubar',$data) : ''; ?>
 
 <form  id="add-form" onsubmit="return Check_Img();"  method="post" action="<?=site_url('patient/add');?>">
 <!-- Send VN -->
@@ -54,15 +55,14 @@ $data['results'] = ['id_hn'=>$patient['id_hn'],'id_act'=>$patient['id_act']]; ?>
      <button type="button" name="button" id="new"   value="New" class="btn btn-xs green  pt-2 pb-2" style="width:120px"  ><i class="fa fa-plus" style="font-size:24px"></i><br /><strong>New</strong></button> 
      </a>
      <button type="submit" name="button" id="save"   value="Save" class="btn btn-xs blue  pt-2 pb-2" style="width:120px"  ><i class="fa fa-floppy-o" style="font-size:24px"></i><br /><strong>Save</strong></span></button> 
-     
+     <? if($patient['id_hn'] <> ''){ ?>
      <a href="#divSend" id="SendForm">
           <button type="button" name="button" id="Send"  value="Send" class="btn btn-xs yellow fancybox pt-2 pb-2" style="width:120px"  ><i class="fa fa-share-square-o" style="font-size:24px"></i><br /><strong>Send VN</strong></button> 
           <button type="submit" name="button" id="send_btn"   value="Send" style="display:none">
         </a>
+    <? } ?>
     </div>
 </div>
-
-<div id="divSend2" style="display:none"></div>
 <div id="divSend" style="display:none">
   		 <div class="table-responsive">
             <table class="table table-user-information justify-content-center" >
@@ -593,8 +593,11 @@ $(document).ready(function(){
 
 
   function send_vn(){
-    parent.$('#divSend2').html($('#divSend'));
-    $('#divSend2').css('display','none');
+    $('#divSend').find('input:text,input:checkbox, select, textarea')
+        .each(function() {
+          parent.$('#add-form').append($(this).css('display','none'));
+        });
+    parent.$.fancybox.close();
     $('#send_btn').trigger('click');
   }
   

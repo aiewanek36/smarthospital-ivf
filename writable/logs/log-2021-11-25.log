@@ -1,0 +1,120 @@
+CRITICAL - 2021-11-25 04:30:49 --> Call to a member function format() on bool
+#0 C:\xampp\htdocs\smarthospital-ivf\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\smarthospital-ivf\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\smarthospital-ivf\system\Common.php(1097): CodeIgniter\View\View->render('patient/view_pr...', Array, true)
+#3 C:\xampp\htdocs\smarthospital-ivf\app\Controllers\Patient.php(130): view('patient/view_pr...', Array)
+#4 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(826): App\Controllers\Patient->profile('1')
+#5 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#6 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\smarthospital-ivf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\smarthospital-ivf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-11-25 04:47:35 --> Call to a member function where() on null
+#0 C:\xampp\htdocs\smarthospital-ivf\app\Controllers\Patient.php(118): App\Models\DataModel->getRow('tb_patient', '')
+#1 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(826): App\Controllers\Patient->profile('1')
+#2 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#3 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\smarthospital-ivf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\smarthospital-ivf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-11-25 04:48:11 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::count_all_results()
+#0 C:\xampp\htdocs\smarthospital-ivf\app\Controllers\Patient.php(118): App\Models\DataModel->getRow('tb_patient', '')
+#1 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(826): App\Controllers\Patient->profile('1')
+#2 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#3 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\smarthospital-ivf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\smarthospital-ivf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-11-25 04:48:50 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::count_all_results()
+#0 C:\xampp\htdocs\smarthospital-ivf\app\Controllers\Patient.php(118): App\Models\DataModel->getRow('tb_patient', '')
+#1 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(826): App\Controllers\Patient->profile('1')
+#2 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#3 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\smarthospital-ivf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\smarthospital-ivf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2021-11-25 04:49:37 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 3
+ERROR - 2021-11-25 04:49:42 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 3
+ERROR - 2021-11-25 04:50:22 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 3
+CRITICAL - 2021-11-25 04:50:22 --> Call to a member function num_rows() on bool
+#0 C:\xampp\htdocs\smarthospital-ivf\app\Controllers\Patient.php(118): App\Models\DataModel->getRow('tb_patient', '')
+#1 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(826): App\Controllers\Patient->profile('1')
+#2 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#3 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\smarthospital-ivf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\smarthospital-ivf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2021-11-25 04:50:59 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 3
+CRITICAL - 2021-11-25 04:50:59 --> Call to a member function num_rows() on bool
+#0 C:\xampp\htdocs\smarthospital-ivf\app\Controllers\Patient.php(118): App\Models\DataModel->getRow('tb_patient', '')
+#1 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(826): App\Controllers\Patient->profile('1')
+#2 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#3 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\smarthospital-ivf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\smarthospital-ivf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2021-11-25 04:51:19 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 3
+CRITICAL - 2021-11-25 04:51:19 --> Call to a member function countResultAll() on bool
+#0 C:\xampp\htdocs\smarthospital-ivf\app\Controllers\Patient.php(118): App\Models\DataModel->getRow('tb_patient', '')
+#1 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(826): App\Controllers\Patient->profile('1')
+#2 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#3 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\smarthospital-ivf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\smarthospital-ivf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2021-11-25 04:51:21 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 3
+CRITICAL - 2021-11-25 04:51:21 --> Call to a member function countResultAll() on bool
+#0 C:\xampp\htdocs\smarthospital-ivf\app\Controllers\Patient.php(118): App\Models\DataModel->getRow('tb_patient', '')
+#1 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(826): App\Controllers\Patient->profile('1')
+#2 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#3 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\smarthospital-ivf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\smarthospital-ivf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-11-25 04:51:25 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countResultAll()
+#0 C:\xampp\htdocs\smarthospital-ivf\app\Controllers\Patient.php(118): App\Models\DataModel->getRow('tb_patient', '')
+#1 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(826): App\Controllers\Patient->profile('1')
+#2 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#3 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\smarthospital-ivf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\smarthospital-ivf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-11-25 04:51:27 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countResultAll()
+#0 C:\xampp\htdocs\smarthospital-ivf\app\Controllers\Patient.php(118): App\Models\DataModel->getRow('tb_patient', '')
+#1 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(826): App\Controllers\Patient->profile('1')
+#2 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#3 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\smarthospital-ivf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\smarthospital-ivf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-11-25 04:51:39 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::countResultAll()
+#0 C:\xampp\htdocs\smarthospital-ivf\app\Controllers\Patient.php(118): App\Models\DataModel->getRow('tb_patient', '')
+#1 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(826): App\Controllers\Patient->profile('1')
+#2 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#3 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\smarthospital-ivf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\smarthospital-ivf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2021-11-25 04:51:53 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 3
+CRITICAL - 2021-11-25 04:51:53 --> Call to a member function countAllResults() on bool
+#0 C:\xampp\htdocs\smarthospital-ivf\app\Controllers\Patient.php(118): App\Models\DataModel->getRow('tb_patient', '')
+#1 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(826): App\Controllers\Patient->profile('1')
+#2 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#3 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\smarthospital-ivf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\smarthospital-ivf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2021-11-25 04:52:59 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*) AS *
+FROM `tb_patient`
+WHERE  IS NULL' at line 1
+CRITICAL - 2021-11-25 04:52:59 --> Call to a member function countAllResults() on bool
+#0 C:\xampp\htdocs\smarthospital-ivf\app\Controllers\Patient.php(118): App\Models\DataModel->getRow('tb_patient', '')
+#1 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(826): App\Controllers\Patient->profile('1')
+#2 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Patient))
+#3 C:\xampp\htdocs\smarthospital-ivf\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\smarthospital-ivf\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\smarthospital-ivf\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2021-11-25 04:53:04 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*) AS *
+FROM `tb_patient`
+WHERE  IS NULL' at line 1

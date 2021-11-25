@@ -1,13 +1,12 @@
 <?
-$menu = current_url(true)->getSegment(1);
-$menu2 = current_url(true)->getSegment(2);
+$modules = $_params[0];
 
-if($menu == "active"){ $Active_chk  = 'id="current"';}
-if($menu == "all_patient"){ $AllPatient_chk  = 'id="current"';}
-if($menu == "or_room"){ $OR_chk  = 'id="current"';}
-if($menu == "finance"){ $Fin_chk  = 'id="current"';}
-if($menu == "appointment" && $menu2 == 'List'){ $appList_chk  = 'id="current"';}
-if($menu == "appointment" && $menu2 == 'Make'){ $appMake_chk  = 'id="current"';}
+if($_controller == "patient" && $modules == 'active'){ $Active_chk  = 'id="current"';}
+if($_controller == "patient" && $modules == 'all'){ $AllPatient_chk  = 'id="current"';}
+if($_method == "or_room"){ $OR_chk  = 'id="current"';}
+if($_method == "finance"){ $Fin_chk  = 'id="current"';}
+if($_method == "appointment" && $menu2 == 'List'){ $appList_chk  = 'id="current"';}
+if($_method == "appointment" && $menu2 == 'Make'){ $appMake_chk  = 'id="current"';}
 
 
 $activePatient = '<li '.$Active_chk.'><a href="'.base_url().'/patient/view/active" ><span class="micro14">Active Patient</span></a></li>';
@@ -223,7 +222,7 @@ $ICMART = '<li '.$icmart_chk.'><a href="'.$head_icmart.'/outline.php?menu=icmart
 
   
 <li class="micro14" <? if($_GET['menu']== "edit_user.php"){ ?> id="current" <? } ?>><a href="#" onClick='window.location.replace("<?=$head?>outline.php?menu=edit_user.php");'><span class="micro14">User Profile</span></a></li>
-<li class="micro14"><a href="/logout"><span class="micro14 btn-danger" >Log Out</span></a></li>
+<li class="micro14"><a href="<?=base_url()?>/logout"><span class="micro14 btn-danger" >Log Out</span></a></li>
     </ul>
 </div></td>
   </tr>

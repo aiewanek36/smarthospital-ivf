@@ -8,7 +8,7 @@ class DataModel extends Model
     public function selectAll($sr = null)
     {
         
-        $db = db_connect();
+        $db = \Config\Database::connect();
         $bulider = $db->table($sr['table']);
 
         if(!empty($sr['field'])){
@@ -41,7 +41,7 @@ class DataModel extends Model
     }
 
     public function getSelectAll($sr = null){
-        $db = db_connect();
+        $db = \Config\Database::connect();
         $bulider = $db->table($sr['table']);
        
         if(!empty($sr['where'])){
@@ -64,7 +64,7 @@ class DataModel extends Model
 
     public function insertData($table = null,$data = null)
     {
-        $db = db_connect();
+        $db = \Config\Database::connect();
         $builder = $db->table($table); 
         // $sql = $builder->set($data)->getCompiledInsert('mytable');
         $builder->insert($data);
@@ -74,10 +74,17 @@ class DataModel extends Model
 
     public function updateData($where = null,$table = null,$data = null)
     {
-        $db = db_connect();
+        $db = \Config\Database::connect();
         $builder = $db->table($table); 
         $builder->where($where)->set($data)->update();
         // $sql = $builder->set($data)->getCompiledUpdate('mytable');
         // echo $sql;
+    }
+
+    public function getRow($table = null,$where = null){
+        $db = \Config\Database::connect();
+        $builder = $db->table($table);
+        $builder->where($where);
+        return $builder->countAllResults();
     }
 }

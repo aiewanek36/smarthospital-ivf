@@ -28,7 +28,7 @@ body {
 </style>
 <body>
 <div class="centered">
-<form action="Login/auth" method="post">
+<form action="login/Auth" method="post">
   <img src="assets/logo.png" alt="" height="50px">
   <table width="985" height="428" border="0" align="center" cellpadding="0" cellspacing="0" style="background-image:url(assets/background/bg-login.png);width:985;height:428">
                               <tr><td>

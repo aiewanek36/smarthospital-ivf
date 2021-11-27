@@ -1,15 +1,3 @@
-<link rel="stylesheet" type="text/css" href="<?php echo base_url('plugins/jquery.Thailand.js/dist/jquery.Thailand.min.css');?>">
-
-<style>
-
-	#my_camera {
-		width: auto !important;
-		height: auto !important;
-	}
-  input[type=text]:disabled {
-    background: #dddddd;
-  }
-</style>
 <? $patient = $spouse[0]; ?>
         <!-- Female Data -->
         <div class="col-12 col-md-12 col-lg-6 " style="background-color:#4b8df8" >

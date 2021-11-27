@@ -220,12 +220,14 @@
 $id_hn = $results['id_hn'];
 //print_r($results);
 $router = \Config\Services::router();
+$controller = current_url(true)->getSegment(3);
 $page = $router->methodName();
+$modules = $router->params()[0];
 $id_act = $patient['id_act'];
 $Normaltab = 'class=""';
 $CurrentActive2 = 'class="active-link"';
-if($page=="profile"){$RegChk = $CurrentActive2;}else{$RegChk = $Normaltab;}
-if($page=="opd_room.php"){$NurNoChk = $CurrentActive2;}else{$NurNoChk = $Normaltab;}
+if($controller=="patient"){$RegChk = $CurrentActive2;}else{$RegChk = $Normaltab;}
+if($controller=="visit" && $modules == "vital_sign"){$NurNoChk = $CurrentActive2;}else{$NurNoChk = $Normaltab;}
 if($page=="dx_room.php"){$DxChk = $CurrentActive2;}else{$DxChk = $Normaltab;}
 if($page=="order_tab.php"||$page=="order_tab_his.php"){$OrderChk = $CurrentActive2;}else{$OrderChk = $Normaltab;}
 if($page=="lab_order_rou.php"){$LabChk = $CurrentActive2;}else{$LabChk = $Normaltab;}
@@ -239,7 +241,7 @@ if($page=="phy_room.php"){$Physio = $CurrentActive2;}else{$Physio = $Normaltab;}
 if($page=="appointment_manage.php"){$MakeApp = $CurrentActive2;}else{$MakeApp = $Normaltab;}
 
 $Reg = '<li ><a '.$RegChk.' href="'.site_url('patient/profile/'.$id_hn).'"><span class="fa fa-user"></span> Registration</a></li>';
-$NurNo = '<li ><a '.$NurNoChk.' href="?menu=opd_room.php&id_hn='.$id_hn.'&id_act='.$id_act.'"><span class="fa fa-pencil-square-o"></span>Nurse Note</a></li>';
+$NurNo = '<li ><a '.$NurNoChk.' href="'.site_url('visit/view/vital_sign/'.$id_hn).'"><span class="fa fa-pencil-square-o"></span>Nurse Note</a></li>';
 $Dx = '<li ><a '.$DxChk.' href="?menu=dx_room.php&id_hn='.$id_hn.'&id_act='.$id_act.'"><span class="fa fa-user-md"></span>Doctor Room</a></li>';
 $Physio = '<li ><a '.$Physio.' href="?menu=phy_room.php&id_hn='.$id_hn.'&id_act='.$id_act.'">Physio</a></li>';
 $Order = '<li ><a '.$OrderChk.' href="?menu=order_tab.php&id_hn='.$id_hn.'&id_act='.$id_act.'">Order PCT</a></li>';

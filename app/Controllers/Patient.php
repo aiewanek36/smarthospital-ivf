@@ -49,7 +49,6 @@ class Patient extends Controller
         }
 
         $router = \Config\Services::router();
-        $_method = 
         
         $data['_method'] = $router->methodName();
         $data['_controller'] = current_url(true)->getSegment(3);
